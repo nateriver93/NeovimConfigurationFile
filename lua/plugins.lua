@@ -20,9 +20,7 @@ return require('packer').startup(function(use)
 	}
 	use {
 	  'nvim-tree/nvim-tree.lua',
-	  requires = {
-		'nvim-tree/nvim-web-devicons', -- optional, for file icons
-	  },
+	  requires = { 'kyazdani42/nvim-web-devicons' },
 	  tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
 	use 'simrat39/symbols-outline.nvim'
@@ -32,15 +30,19 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use {
-		"williamboman/nvim-lsp-installer",
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
 	}
---	use {
---		'goolord/alpha-nvim',
---		config = function ()
---			require'alpha'.setup(require'alpha.themes.dashboard'.config)
---		end
---	}
+	use 'hrsh7th/cmp-nvim-lsp'
+	use 'hrsh7th/cmp-buffer'
+	use 'hrsh7th/cmp-path'
+	use 'hrsh7th/cmp-cmdline'
+	use 'hrsh7th/nvim-cmp'
+	use 'hrsh7th/cmp-vsnip'
+	use 'hrsh7th/vim-vsnip'
+	use 'L3MON4D3/LuaSnip'
+	use 'saadparwaiz1/cmp_luasnip'
 	use {
 		'goolord/alpha-nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' },
