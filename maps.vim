@@ -47,3 +47,5 @@ inoremap <C-d> <delete>
 "
 "Tree map
 nnoremap <leader>t :NvimTreeToggle<CR>
+" Project map
+nnoremap <leader>p :Telescope fd<CR>
