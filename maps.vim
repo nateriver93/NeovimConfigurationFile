@@ -13,10 +13,10 @@ nnoremap <leader>l <C-w>l
 nnoremap <leader>k <C-w>k
 nnoremap <leader>h <C-w>h
 nnoremap <leader>j <C-w>j
-nnoremap <up> :res +5<CR>
-nnoremap <down> :res -5<CR>
-nnoremap <left> :vertical resize-5<CR>
-nnoremap <right> :vertical resize+5<CR>
+nnoremap <silent> <up> :res +5<CR>
+nnoremap <silent> <down> :res -5<CR>
+nnoremap <silent> <left> :vertical resize-5<CR>
+nnoremap <silent> <right> :vertical resize+5<CR>
 nnoremap <leader>dl :set splitright<CR>:vsplit<CR>
 nnoremap <leader>dj :set splitbelow<CR>:split<CR>
 

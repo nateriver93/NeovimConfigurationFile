@@ -45,7 +45,10 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/vim-vsnip'
 	use 'rafamadriz/friendly-snippets'
 	use 'onsails/lspkind-nvim'
-
+	use({
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+	})
 	use {
 		'goolord/alpha-nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' },
