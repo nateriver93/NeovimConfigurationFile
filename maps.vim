@@ -35,6 +35,8 @@ nnoremap <leader>r <C-r>
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
 nnoremap <leader>o O
+nnoremap <a-i> <C-i>
+nnoremap <a-o> <C-o>
 "vmap <leader>c gc
 inoremap <C-h> <left>
 inoremap <C-j> <down>
@@ -48,4 +50,6 @@ inoremap <C-d> <delete>
 "Tree map
 nnoremap <leader>t :NvimTreeToggle<CR>
 " Project map
-nnoremap <leader>p :Telescope fd<CR>
+nnoremap <leader>p :NvimTreeOpen<CR>:Telescope fd<CR>
+nnoremap <leader>f yiw:NvimTreeOpen<CR>:Telescope grep_string search=<C-r>"<CR>
+nnoremap <leader>b :Telescope buffers<CR>
