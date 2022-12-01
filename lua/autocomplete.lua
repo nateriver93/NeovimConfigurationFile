@@ -61,35 +61,35 @@ cmp.setup {
     -- ['<C-d>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
   },
 
-  -- 使用lspkind-nvim显示类型图标
-  formatting = {
-	format = lspkind.cmp_format({
-	  with_text = true, -- do not show text alongside icons
-	  maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
-	  before = function (entry, vim_item)
-		-- Source 显示提示来源
-		vim_item.menu = "["..string.upper(entry.source.name).."]"
-		return vim_item
-	  end
-	})
-  },
-}
+   -- 使用lspkind-nvim显示类型图标
+   formatting = {
+ 	format = lspkind.cmp_format({
+ 	  with_text = true, -- do not show text alongside icons
+ 	  maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
+ 	  before = function (entry, vim_item)
+ 		-- Source 显示提示来源
+ 		vim_item.menu = "["..string.upper(entry.source.name).."]"
+ 		return vim_item
+ 	  end
+ 	})
+   },
+ }
 
--- Use buffer source for `/`.
-cmp.setup.cmdline('/', {
-  sources = {
-	{ name = 'buffer' }
-  }
-})
+ -- Use buffer source for `/`.
+ cmp.setup.cmdline('/', {
+   sources = {
+ 	{ name = 'buffer' }
+   }
+ })
 
--- Use cmdline & path source for ':'.
-cmp.setup.cmdline(':', {
-  sources = cmp.config.sources({
-	{ name = 'path' }
-  }, {
-	  { name = 'cmdline' }
-	})
-})
+ -- Use cmdline & path source for ':'.
+ cmp.setup.cmdline(':', {
+   sources = cmp.config.sources({
+ 	{ name = 'path' }
+   }, {
+ 	  { name = 'cmdline' }
+ 	})
+ })
 end
 
 return M
