@@ -1,4 +1,12 @@
-
+"开启文件类型侦测
+filetype on
+"
+"根据侦测到的不同类型加载对应的插件
+filetype plugin on
+"
+"根据侦测到的不同类型采用不同的缩进格式
+filetype indent on
+"
 " 开启语法高亮功能
 syntax enable
 " 开启语法高亮功能

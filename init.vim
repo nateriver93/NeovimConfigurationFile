@@ -24,3 +24,5 @@ lua require('filesearch').config()
 lua require('markdown').config()
 " 按键映射
 runtime ./maps.vim
+" 启动加速
+lua require('speedup').config()

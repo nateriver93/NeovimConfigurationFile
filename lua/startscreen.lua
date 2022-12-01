@@ -13,10 +13,10 @@ function M.config()
 	dashboard.section.buttons.val = {
 	 dashboard.button( "e", "  New file" , ":ene <BAR> startinsert <CR>"),
 	 dashboard.button( "q", "  Quit NVIM" , ":qa<CR>"),
-	 dashboard.button( "m", "  Open config" , ":cd C:\\Users\\su-25\\AppData\\Local\\nvim<CR> :NvimTreeOpen<CR>"),
-	 dashboard.button( "p", "  Open project" , ":cd C:\\Users\\su-25\\Project<CR> :NvimTreeOpen<CR>"),
-	 -- dashboard.button( "m", "  Open config" , ":cd C:\\Users\\Nateriver\\AppData\\Local\\nvim<CR> :NvimTreeOpen<CR>"),
-	 -- dashboard.button( "p", "  Open project" , ":cd C:\\Users\\Nateriver\\Project<CR> :NvimTreeOpen<CR>"),
+	 -- dashboard.button( "m", "  Open config" , ":cd C:\\Users\\su-25\\AppData\\Local\\nvim<CR> :NvimTreeOpen<CR>"),
+	 -- dashboard.button( "p", "  Open project" , ":cd C:\\Users\\su-25\\Project<CR> :NvimTreeOpen<CR>"),
+	 dashboard.button( "m", "  Open config" , ":cd C:\\Users\\Nateriver\\AppData\\Local\\nvim<CR> :NvimTreeOpen<CR>"),
+	 dashboard.button( "p", "  Open project" , ":cd C:\\Users\\Nateriver\\Project<CR> :NvimTreeOpen<CR>"),
 	}
 	local handle = io.popen('fortune')
 	local fortune = handle:read("*a")

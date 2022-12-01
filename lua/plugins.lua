@@ -53,8 +53,11 @@ return require('packer').startup(function(use)
 		'goolord/alpha-nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' },
 	}
-	
+
 	use {'iamcco/markdown-preview.nvim'}
+
+	use 'lewis6991/impatient.nvim'
+	use("nathom/filetype.nvim")
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
