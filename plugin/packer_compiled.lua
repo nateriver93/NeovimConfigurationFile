@@ -104,10 +104,30 @@ _G.packer_plugins = {
     path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
+  ["filetype.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\filetype.nvim",
+    url = "https://github.com/nathom/filetype.nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
+  ["hop.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\hop.nvim",
+    url = "https://github.com/phaazon/hop.nvim"
+  },
+  ["impatient.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",
+    url = "https://github.com/lewis6991/impatient.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
@@ -144,6 +164,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-comment"] = {
+    loaded = true,
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-comment",
+    url = "https://github.com/terrortylor/nvim-comment"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
@@ -160,9 +185,8 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-web-devicons",
+    loaded = true,
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.vim"] = {
@@ -180,15 +204,25 @@ _G.packer_plugins = {
     path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["symbols-outline.nvim"] = {
+  ["telescope-file-browser.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\symbols-outline.nvim",
-    url = "https://github.com/simrat39/symbols-outline.nvim"
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-file-browser.nvim",
+    url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
+  },
+  ["telescope-ui-select.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope-ui-select.nvim",
+    url = "https://github.com/nvim-telescope/telescope-ui-select.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["vim-startuptime"] = {
+    loaded = true,
+    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-startuptime",
+    url = "https://github.com/dstein64/vim-startuptime"
   },
   ["vim-vsnip"] = {
     loaded = true,

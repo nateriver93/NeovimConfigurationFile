@@ -144,7 +144,11 @@ function M.config()
       filters = {
         dotfiles = false,
         custom = {},
-        exclude = {},
+        exclude = {
+		".map",
+		".dll",
+		".o",
+		},
       },
       filesystem_watchers = {
         enable = true,

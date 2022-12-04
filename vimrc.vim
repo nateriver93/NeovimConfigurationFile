@@ -85,3 +85,8 @@ let mapleader=" "
 
 " 不使用鼠标
 set mouse=c
+
+" theme
+colorscheme github_dark_default
+
+cd C:/

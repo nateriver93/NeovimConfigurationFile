@@ -1,6 +1,10 @@
 local M = {}
 function M.config()
-	require('impatient')
+	local impatient = require("impatient")
+
+	impatient.enable_profile()
+
+	require("filetype").setup({})
 end
 
 return M
