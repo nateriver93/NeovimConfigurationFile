@@ -17,7 +17,7 @@ function M.config()
       sort_by = "name",
       root_dirs = {},
       prefer_startup_root = false,
-      sync_root_with_cwd = false,
+      sync_root_with_cwd = true,
       reload_on_bufenter = false,
       respect_buf_cwd = false,
       on_attach = "disable",
@@ -39,8 +39,8 @@ function M.config()
 				{ key = "o", action = "" },
 				{ key = {"l" }, action = "edit", mode = "n" },
 
-				{ key = "<C-]>", action = "" },
-				{ key = {"o" }, action = "cd", mode = "n" },
+				-- { key = "<C-]>", action = "" },
+				-- { key = {"o" }, action = "cd", mode = "n" },
 
 				{ key = "<BS>", action = "" },
 				{ key = {"h" }, action = "close_node", mode = "n" },

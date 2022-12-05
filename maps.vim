@@ -33,8 +33,9 @@ nnoremap <silent> <leader>t :NvimTreeToggle<CR>
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
 nnoremap <silent> <leader>fb :Telescope file_browser<CR>
 nnoremap <silent> <leader>of :Telescope oldfiles<CR>
-nnoremap <silent> <leader>f yiw:NvimTreeOpen<CR>:Telescope grep_string search=<C-r>"<CR>
+nnoremap <silent> <leader>f :Telescope grep_string<CR>
 nnoremap <silent> <leader>b :Telescope buffers<CR>
 nnoremap <silent> <leader>n :Lspsaga peek_definition<CR>
 nnoremap <silent> <leader>m :Lspsaga lsp_finder<CR>
 nnoremap <silent> <leader>u :LSoutlineToggle<CR>
+nnoremap <silent> <leader>cd :cd %:p:h<CR>

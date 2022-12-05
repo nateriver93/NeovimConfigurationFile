@@ -89,4 +89,4 @@ set mouse=c
 " theme
 colorscheme github_dark_default
 
-cd C:/
+cd C:/Users/su-25

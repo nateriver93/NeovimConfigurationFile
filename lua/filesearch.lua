@@ -5,6 +5,8 @@ function M.config()
 			find_files = {
 				theme = "ivy",
 				find_command = {"fd"},
+				previewer = false,
+				hidden = true
 			},
 
 			oldfiles = {
@@ -14,6 +16,10 @@ function M.config()
 			buffers = {
 				theme = "ivy",
 			},
+
+			grep_string = {
+				theme = "ivy",
+			}
 		},
 
 		extensions = {
@@ -24,17 +30,19 @@ function M.config()
 			},
 
 			file_browser = {
-			  theme = "ivy",
-			  -- disables netrw and use telescope-file-browser in its place
-			  hijack_netrw = true,
-			  mappings = {
-				["i"] = {
-				  -- your custom insert mode mappings
+				theme = "ivy",
+				find_command = {"fd"},
+				hidden = true,
+				files = false,
+				previewer = false,
+				mappings = {
+				-- ["i"] = {
+				--   -- your custom insert mode mappings
+				-- },
+				-- ["n"] = {
+				--   -- your custom normal mode mappings
+				-- },
 				},
-				["n"] = {
-				  -- your custom normal mode mappings
-				},
-			  },
 			},
 
 			-- fzf = {
