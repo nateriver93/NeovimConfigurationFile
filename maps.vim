@@ -38,4 +38,6 @@ nnoremap <silent> <leader>b :Telescope buffers<CR>
 nnoremap <silent> <leader>n :Lspsaga peek_definition<CR>
 nnoremap <silent> <leader>m :Lspsaga lsp_finder<CR>
 nnoremap <silent> <leader>u :LSoutlineToggle<CR>
-nnoremap <silent> <leader>cd :cd %:p:h<CR>
+nnoremap <silent> <leader>ls :SessionManager load_session<CR>
+nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
+nnoremap <silent> <leader>ds :SessionManager delete_session<CR>

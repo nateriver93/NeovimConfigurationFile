@@ -25,7 +25,7 @@ lua require('markdown').config()
 " 启动加速
 lua require('speedup').config()
 " Workspace
-" lua require('workspace').config()
+lua require('workspace').config()
 " Comment
 lua require('comment').config()
 " Easymotion

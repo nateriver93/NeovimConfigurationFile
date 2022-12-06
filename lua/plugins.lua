@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
 	use 'nvim-telescope/telescope-ui-select.nvim'
 	use 'nvim-telescope/telescope-file-browser.nvim'
 	-- use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+	--
 	-- lsp
 	use {
 		"williamboman/mason.nvim",
@@ -60,17 +61,20 @@ return require('packer').startup(function(use)
 		'goolord/alpha-nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' },
 	}
+	--
 	-- Markdown
 	use({
 		"iamcco/markdown-preview.nvim",
 		run = function() vim.fn["mkdp#util#install"]() end,
 	})
+	--
 	-- Speed up
 	use 'dstein64/vim-startuptime'
 	use 'lewis6991/impatient.nvim'
 	use 'nathom/filetype.nvim'
+	--
 	-- Workspace
-	-- use 'Shatur/neovim-session-manager'
+	use 'Shatur/neovim-session-manager'
 
 	-- Comment
 	use 'terrortylor/nvim-comment'

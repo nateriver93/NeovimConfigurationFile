@@ -9,8 +9,6 @@ filetype indent on
 "
 " 开启语法高亮功能
 syntax enable
-" 开启语法高亮功能
-syntax enable
 
 " 开启语法高亮
 syntax on
