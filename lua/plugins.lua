@@ -27,8 +27,18 @@ return require('packer').startup(function(use)
 	  tag = 'nightly' -- optional, updated every week. (see issue #1193)
 	}
 --	use 'simrat39/symbols-outline.nvim'
-	use 'nvim-treesitter/nvim-treesitter'
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		opt = true,
+		run = ":TSUpdate",
+		event = "BufReadPost",
+		config = require('highlight').nvim_treesitter,
+	}
 	-- search files
+	-- use {
+	-- 	'nvim-lua/plenary.nvim',
+	-- 	opt = false,
+	-- }
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.0',
 		requires = { {'nvim-lua/plenary.nvim'} }
@@ -69,7 +79,11 @@ return require('packer').startup(function(use)
 	})
 	--
 	-- Speed up
-	use 'dstein64/vim-startuptime'
+	use {
+		'dstein64/vim-startuptime',
+		opt = true,
+		cmd = "StartupTime",
+	}
 	use 'lewis6991/impatient.nvim'
 	use 'nathom/filetype.nvim'
 	--
@@ -77,11 +91,19 @@ return require('packer').startup(function(use)
 	use 'Shatur/neovim-session-manager'
 
 	-- Comment
-	use 'terrortylor/nvim-comment'
+	use {
+		'terrortylor/nvim-comment',
+		opt = true,
+		event = "BufReadPost",
+		config = require('comment').nvim_comment,
+	}
 	-- Easymotion
 	use {
 		'phaazon/hop.nvim',
 		branch = 'v2', -- optional but strongly recommended
+		opt = true,
+		event = "BufReadPost",
+		config = require('easymotion').hop,
 	}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

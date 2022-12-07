@@ -14,8 +14,6 @@ lua require('autocomplete').config()
 lua require('filetree').config()
 " 函数列表
 " lua require('functionlist').config()
-" 高亮
-lua require('highlight').config()
 " 启动画面
 lua require('startscreen').config()
 " 文件搜索
@@ -26,9 +24,5 @@ lua require('markdown').config()
 lua require('speedup').config()
 " Workspace
 lua require('workspace').config()
-" Comment
-lua require('comment').config()
-" Easymotion
-lua require('easymotion').config()
 " 按键映射
 runtime ./maps.vim

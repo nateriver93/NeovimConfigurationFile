@@ -1,5 +1,5 @@
-local M = {}
-function M.config()
+local config = {}
+function config.nvim_treesitter()
 	-- nvim-treesitter config
 	require 'nvim-treesitter.configs'.setup {
 		-- ensure_installed = "maintained", -- for installing all maintained parsers
@@ -13,4 +13,4 @@ function M.config()
 	}
 end
 
-return M
+return config

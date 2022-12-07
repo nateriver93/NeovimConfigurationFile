@@ -87,7 +87,7 @@ set mouse=c
 " theme
 colorscheme github_dark_default
 
-cd C:/Users/su-25
+cd ~
 
 " Improve Neovim startup time by disabling python and host check
 " let g:python3_host_skip_check = 1
