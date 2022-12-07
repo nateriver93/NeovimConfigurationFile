@@ -32,12 +32,14 @@ nnoremap mm :HopChar2MW<CR>
 nnoremap <silent> <leader>t :NvimTreeToggle<CR>
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
 nnoremap <silent> <leader>fb :Telescope file_browser<CR>
-nnoremap <silent> <leader>of :Telescope oldfiles<CR>
-nnoremap <silent> <leader>f :Telescope grep_string<CR>
+nnoremap <silent> <leader>fo :Telescope oldfiles<CR>
+nnoremap <silent> <leader>gl :Telescope live_grep<CR>
+nnoremap <silent> <leader>gs :Telescope grep_string<CR>
 nnoremap <silent> <leader>b :Telescope buffers<CR>
 nnoremap <silent> <leader>n :Lspsaga peek_definition<CR>
 nnoremap <silent> <leader>m :Lspsaga lsp_finder<CR>
 nnoremap <silent> <leader>u :LSoutlineToggle<CR>
-nnoremap <silent> <leader>ls :SessionManager load_session<CR>
+nnoremap <silent> <leader>sl :SessionManager load_session<CR>
 nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
-nnoremap <silent> <leader>ds :SessionManager delete_session<CR>
+nnoremap <silent> <leader>sd :SessionManager delete_session<CR>
+nnoremap <silent> <leader>e :wa<CR>:qa<CR>

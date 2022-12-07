@@ -13,9 +13,10 @@ function M.config()
 	dashboard.section.buttons.val = {
 	 dashboard.button( "e", "  New file" , ":ene <BAR> startinsert <CR>"),
 	 dashboard.button( "q", "  Quit NVIM" , ":qa<CR>"),
-	 dashboard.button( "leader f b", " File Browser" , ":Telescope file_browser<CR>"),
-	 dashboard.button( "leader f f", " Search Files" , ":Telescope find_files<CR>"),
-	 dashboard.button( "leader o f", " Recent Opened Files" , ":Telescope oldfiles<CR>"),
+	 dashboard.button( "<leader> s l", "  Load Session" , ":SessionManager load_session<CR>"),
+	 dashboard.button( "<leader> f b", "  Folder Browser" , ":Telescope file_browser<CR>"),
+	 dashboard.button( "<leader> f f", "  Search Files" , ":Telescope find_files<CR>"),
+	 dashboard.button( "<leader> f o", "  Recent Opened Files" , ":Telescope oldfiles<CR>"),
 
 	}
 	local handle = io.popen('fortune')

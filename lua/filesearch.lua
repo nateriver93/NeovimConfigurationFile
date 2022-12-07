@@ -19,6 +19,12 @@ function M.config()
 
 			grep_string = {
 				theme = "ivy",
+			},
+
+			live_grep = {
+				theme = "ivy",
+				find_command = {"fd"},
+				hidden = true
 			}
 		},
 
