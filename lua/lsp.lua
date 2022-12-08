@@ -105,9 +105,9 @@ function M.config()
 		  --set special filetype win that outline window split.like NvimTree neotree
 		  -- defx, db_ui
 		  win_with = '',
-		  win_width = 30,
+		  win_width = 60,
 		  auto_enter = true,
-		  auto_preview = true,
+		  auto_preview = false,
 		  virt_text = '┃',
 		  jump_key = 'o',
 		  -- auto refresh when change buffer

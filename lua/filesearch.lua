@@ -3,26 +3,26 @@ function M.config()
 	require('telescope').setup{
 		pickers = {
 			find_files = {
-				theme = "ivy",
+				theme = "dropdown",
 				find_command = {"fd"},
 				previewer = false,
 				hidden = true
 			},
 
 			oldfiles = {
-				theme = "ivy",
+				theme = "dropdown",
 			},
 
 			buffers = {
-				theme = "ivy",
+				theme = "dropdown",
 			},
 
 			grep_string = {
-				theme = "ivy",
+				theme = "dropdown",
 			},
 
 			live_grep = {
-				theme = "ivy",
+				theme = "dropdown",
 				find_command = {"fd"},
 				hidden = true
 			}
@@ -30,13 +30,13 @@ function M.config()
 
 		extensions = {
 			["ui-select"] = {
-				require("telescope.themes").get_ivy {
+				require("telescope.themes").get_dropdown {
 				-- even more opts
 				}
 			},
 
 			file_browser = {
-				theme = "ivy",
+				theme = "dropdown",
 				find_command = {"fd"},
 				hidden = true,
 				files = false,

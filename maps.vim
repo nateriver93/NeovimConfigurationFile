@@ -16,28 +16,27 @@ nnoremap <silent> <a-j> 5j
 nnoremap <silent> <a-k> 5k
 vnoremap <silent> <a-j> 5j
 vnoremap <silent> <a-k> 5k
+nnoremap <silent> n nzz
+nnoremap <silent> <a-n> Nzz
+nnoremap <a-i> <C-i>
+nnoremap <a-o> <C-o>
 nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>g G
 nnoremap <leader>a A
 nnoremap <leader>i I
 nnoremap <leader>r <C-r>
-nnoremap <silent> n nzz
-nnoremap <silent> N Nzz
 nnoremap <leader>o O
-nnoremap <a-i> <C-i>
-nnoremap <a-o> <C-o>
 nnoremap mm :HopChar2MW<CR>
 
 nnoremap <silent> <leader>t :NvimTreeToggle<CR>
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
 nnoremap <silent> <leader>fb :Telescope file_browser<CR>
 nnoremap <silent> <leader>fo :Telescope oldfiles<CR>
-nnoremap <silent> <leader>gl :Telescope live_grep<CR>
-nnoremap <silent> <leader>gs :Telescope grep_string<CR>
+nnoremap <silent> <leader>fl :Telescope live_grep<CR>
+nnoremap <silent> <leader>fs :Telescope grep_string<CR>
 nnoremap <silent> <leader>b :Telescope buffers<CR>
-nnoremap <silent> <leader>n :Lspsaga peek_definition<CR>
-nnoremap <silent> <leader>m :Lspsaga lsp_finder<CR>
+nnoremap <silent> <leader>n :Lspsaga lsp_finder<CR>
 nnoremap <silent> <leader>u :LSoutlineToggle<CR>
 nnoremap <silent> <leader>sl :SessionManager load_session<CR>
 nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
