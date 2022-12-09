@@ -6,23 +6,15 @@ lua require('plugins')
 lua require('theme').config()
 " 状态栏
 lua require('statusline').config()
-" lsp
-lua require('lsp').config()
 " 自动补全
 lua require('autocomplete').config()
-" 文件树
-lua require('filetree').config()
 " 函数列表
 " lua require('functionlist').config()
 " 启动画面
 lua require('startscreen').config()
-" 文件搜索
-lua require('filesearch').config()
 " Markdown
 lua require('markdown').config()
 " 启动加速
 lua require('speedup').config()
-" Workspace
-lua require('workspace').config()
 " 按键映射
 runtime ./maps.vim

@@ -24,7 +24,8 @@ return require('packer').startup(function(use)
 	use {
 	  'nvim-tree/nvim-tree.lua',
 	  requires = { 'kyazdani42/nvim-web-devicons' },
-	  tag = 'nightly' -- optional, updated every week. (see issue #1193)
+	  tag = 'nightly', -- optional, updated every week. (see issue #1193)
+	  config = require('filetree').nvim_tree,
 	}
 --	use 'simrat39/symbols-outline.nvim'
 	use {
@@ -35,23 +36,65 @@ return require('packer').startup(function(use)
 		config = require('highlight').nvim_treesitter,
 	}
 	-- search files
-	-- use {
-	-- 	'nvim-lua/plenary.nvim',
-	-- 	opt = false,
-	-- }
 	use {
-		'nvim-telescope/telescope.nvim', tag = '0.1.0',
+		'nvim-lua/plenary.nvim',
+		opt = false,
+	}
+	use {
+		'Shatur/neovim-session-manager',
+		opt = true,
+		cmd = {"SessionManager"},
+		config = require('workspace').session_manager,
+	}
+	use {
+		'nvim-telescope/telescope.nvim',
+		tag = '0.1.0',
+		opt = true,
+		module = "telescope",
+		cmd = {"Telescope"},
+		after = "neovim-session-manager",
+		config = require('filesearch').telescope,
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	use 'nvim-telescope/telescope-ui-select.nvim'
-	use 'nvim-telescope/telescope-file-browser.nvim'
-	-- use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-	--
+	-- use {
+	-- 	'nvim-telescope/telescope-fzf-native.nvim',
+	-- 	opt = true,
+	-- 	run = "make",
+	-- 	after = "telescope.nvim",
+	-- }
+	use {
+		'nvim-telescope/telescope-ui-select.nvim',
+		opt = true,
+		after = "telescope.nvim",
+	}
+	use {
+		'nvim-telescope/telescope-file-browser.nvim',
+		opt = true,
+		after = "telescope.nvim",
+	}
 	-- lsp
 	use {
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
 		"neovim/nvim-lspconfig",
+		opt = true,
+		event = "BufReadPre",
+		config = require('lsp').lspconfig,
+	}
+	use {
+		"williamboman/mason.nvim",
+		opt = false,
+		config = require('lsp').mason,
+	}
+	use {
+		"williamboman/mason-lspconfig.nvim",
+		opt = false,
+		config = require('lsp').mason_lspconfig,
+	}
+	use {
+		"glepnir/lspsaga.nvim",
+		branch = "main",
+		opt = true,
+		event = "LspAttach",
+		config = require('lsp').lspsaga,
 	}
 	-- auto complete
 	use 'hrsh7th/cmp-nvim-lsp'
@@ -63,10 +106,8 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/vim-vsnip'
 	use 'rafamadriz/friendly-snippets'
 	use 'onsails/lspkind-nvim'
-	use({
-		"glepnir/lspsaga.nvim",
-		branch = "main",
-	})
+
+	-- StartScreen
 	use {
 		'goolord/alpha-nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' },
@@ -86,9 +127,6 @@ return require('packer').startup(function(use)
 	}
 	use 'lewis6991/impatient.nvim'
 	use 'nathom/filetype.nvim'
-	--
-	-- Workspace
-	use 'Shatur/neovim-session-manager'
 
 	-- Comment
 	use {
@@ -104,6 +142,16 @@ return require('packer').startup(function(use)
 		opt = true,
 		event = "BufReadPost",
 		config = require('easymotion').hop,
+	}
+	-- UndoTree
+	use {
+		"jiaoshijie/undotree",
+		opt = true,
+		module = "undotree",
+		config = require('filetree').undotree,
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
 	}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

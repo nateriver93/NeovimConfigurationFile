@@ -1,5 +1,5 @@
-local M = {}
-function M.config()
+local config = {}
+function config.session_manager()
 	local Path = require('plenary.path')
 	require('session_manager').setup({
 	  sessions_dir = Path:new(vim.fn.stdpath('data'), 'sessions'), -- The directory where the session files will be saved.
@@ -18,4 +18,4 @@ function M.config()
 	})
 end
 
-return M
+return config

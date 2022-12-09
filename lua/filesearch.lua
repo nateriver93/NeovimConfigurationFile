@@ -1,5 +1,5 @@
-local M = {}
-function M.config()
+local config = {}
+function config.telescope()
 	require('telescope').setup{
 		pickers = {
 			find_files = {
@@ -66,4 +66,4 @@ function M.config()
 	-- require('telescope').load_extension("fzf")
 end
 
-return M
+return config
