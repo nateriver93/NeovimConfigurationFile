@@ -38,6 +38,7 @@ nnoremap <silent> <leader>fo :Telescope oldfiles<CR>
 nnoremap <silent> <leader>fl :Telescope live_grep<CR>
 nnoremap <silent> <leader>fs :Telescope grep_string<CR>
 nnoremap <silent> <leader>fb :Telescope buffers<CR>
+nnoremap <silent> <leader>ft :TodoTelescope<CR>
 nnoremap <silent> <leader>n :Lspsaga lsp_finder<CR>
 nnoremap <silent> <leader>u :LSoutlineToggle<CR>
 nnoremap <silent> <leader>sl :SessionManager load_session<CR>

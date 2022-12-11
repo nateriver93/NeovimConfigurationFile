@@ -3,40 +3,47 @@ function config.telescope()
 	require('telescope').setup{
 		pickers = {
 			find_files = {
-				theme = "dropdown",
+				theme = "ivy",
 				find_command = {"fd"},
 				previewer = false,
 				hidden = true
 			},
 
 			oldfiles = {
-				theme = "dropdown",
+				theme = "ivy",
+				find_command = {"fd"},
+				previewer = false,
+				hidden = true,
 			},
 
 			buffers = {
-				theme = "dropdown",
+				theme = "ivy",
+				find_command = {"fd"},
+				previewer = false,
+				hidden = true,
 			},
 
 			grep_string = {
-				theme = "dropdown",
+				theme = "ivy",
+				find_command = {"rg"},
+				hidden = true,
 			},
 
 			live_grep = {
-				theme = "dropdown",
-				find_command = {"fd"},
-				hidden = true
+				theme = "ivy",
+				find_command = {"rg"},
+				hidden = true,
 			}
 		},
 
 		extensions = {
-			["ui-select"] = {
-				require("telescope.themes").get_dropdown {
-				-- even more opts
-				}
+			ui_select = {
+				theme = "ivy",
+				find_command = {"fd"},
 			},
 
 			file_browser = {
-				theme = "dropdown",
+				theme = "ivy",
 				find_command = {"fd"},
 				hidden = true,
 				files = false,

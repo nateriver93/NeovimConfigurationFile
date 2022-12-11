@@ -1,1 +1,1 @@
-Guifont Fira Code Medium:h12
+Guifont Fira Code Retina:h12

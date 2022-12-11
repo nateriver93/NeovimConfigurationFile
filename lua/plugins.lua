@@ -135,6 +135,15 @@ return require('packer').startup(function(use)
 		event = "BufReadPost",
 		config = require('comment').nvim_comment,
 	}
+	-- TODO comment
+	use {
+		"folke/todo-comments.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		opt = true,
+		cmd = "TodoTelescope",
+		config = require('comment').todo_comment,
+	}
+
 	-- Easymotion
 	use {
 		'phaazon/hop.nvim',
@@ -144,6 +153,7 @@ return require('packer').startup(function(use)
 		config = require('easymotion').hop,
 	}
 	-- UndoTree
+	-- TODO: just used to test this plugin
 	use {
 		"jiaoshijie/undotree",
 		opt = true,
