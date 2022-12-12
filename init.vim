@@ -2,14 +2,10 @@
 runtime ./vimrc.vim
 " 插件管理
 lua require('plugins')
-" 主题
-lua require('theme').config()
 " 状态栏
 lua require('statusline').config()
 " 自动补全
 lua require('autocomplete').config()
-" 函数列表
-" lua require('functionlist').config()
 " 启动画面
 lua require('startscreen').config()
 " Markdown

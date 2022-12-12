@@ -1,5 +1,5 @@
-local M = {}
-function M.config()
+local config = {}
+function config.github_theme()
 	require("github-theme").setup({
 	  theme_style = "dark",
 	  function_style = "italic",
@@ -40,4 +40,5 @@ function M.config()
 	}
 end
 
-return M
+
+return config

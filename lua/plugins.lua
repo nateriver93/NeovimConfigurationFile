@@ -15,19 +15,24 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	-- theme
 	use 'kyazdani42/nvim-web-devicons'
-	use 'projekt0n/github-nvim-theme'
+	use {
+		'projekt0n/github-nvim-theme',
+		opt = false,
+		config = require('themeconfig').github_theme,
+	}
 	use 'joshdick/onedark.vim'
 	use {
 	  'nvim-lualine/lualine.nvim',
 	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
 	}
+
 	use {
 	  'nvim-tree/nvim-tree.lua',
 	  requires = { 'kyazdani42/nvim-web-devicons' },
 	  tag = 'nightly', -- optional, updated every week. (see issue #1193)
 	  config = require('filetree').nvim_tree,
 	}
---	use 'simrat39/symbols-outline.nvim'
+
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		opt = true,
@@ -72,6 +77,19 @@ return require('packer').startup(function(use)
 		opt = true,
 		after = "telescope.nvim",
 	}
+
+	use {
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons",
+		opt = true,
+		cmd = { "Trouble", "TroubleToggle", "TroubleRefresh" },
+		config = require('filesearch').trouble,
+	}
+	-- use {
+	-- 	'gbprod/yanky.nvim',
+	-- 	opt = false,
+	-- 	config = require('filesearch').yanky,
+	-- }
 	-- lsp
 	use {
 		"neovim/nvim-lspconfig",
@@ -163,6 +181,7 @@ return require('packer').startup(function(use)
 			"nvim-lua/plenary.nvim",
 		},
 	}
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
