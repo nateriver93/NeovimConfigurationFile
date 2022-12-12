@@ -33,7 +33,7 @@ nnoremap mm :HopChar2MW<CR>
 nnoremap <silent> <leader>tt :NvimTreeToggle<CR>
 nnoremap <silent> <leader>tu :lua require('undotree').toggle()<CR>
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
-nnoremap <silent> <leader>fb :Telescope file_browser<CR>
+nnoremap <silent> <leader>fp :Telescope file_browser<CR>
 nnoremap <silent> <leader>fo :Telescope oldfiles<CR>
 nnoremap <silent> <leader>fl :Telescope live_grep<CR>
 nnoremap <silent> <leader>fs :Telescope grep_string<CR>
