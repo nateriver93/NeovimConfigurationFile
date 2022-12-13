@@ -27,6 +27,13 @@ return require('packer').startup(function(use)
 	}
 
 	use {
+		"lukas-reineke/indent-blankline.nvim",
+		opt = true,
+		event = "BufReadPost",
+		config = require('themeconfig').indent_blankline,
+	}
+
+	use {
 	  'nvim-tree/nvim-tree.lua',
 	  requires = { 'kyazdani42/nvim-web-devicons' },
 	  tag = 'nightly', -- optional, updated every week. (see issue #1193)
@@ -137,6 +144,9 @@ return require('packer').startup(function(use)
 	use({
 		"iamcco/markdown-preview.nvim",
 		run = function() vim.fn["mkdp#util#install"]() end,
+		opt = true,
+		ft = "markdown",
+		config = require('markdown').markdown_preview,
 	})
 	--
 	-- Speed up
@@ -184,6 +194,13 @@ return require('packer').startup(function(use)
 		},
 	}
 
+	use {
+		'sindrets/diffview.nvim',
+		requires = 'nvim-lua/plenary.nvim',
+		opt = true,
+		cmd = { "DiffviewOpen", "DiffviewClose" },
+		config = require('merge').diffview,
+	}
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

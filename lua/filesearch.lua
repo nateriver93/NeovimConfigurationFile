@@ -38,34 +38,34 @@ function config.telescope()
 
 		pickers = {
 			find_files = {
-				theme = "ivy",
+				-- theme = "ivy",
 				find_command = {"fd"},
 				previewer = false,
 				hidden = true
 			},
 
 			oldfiles = {
-				theme = "ivy",
+				-- theme = "ivy",
 				find_command = {"fd"},
 				previewer = false,
 				hidden = true,
 			},
 
 			buffers = {
-				theme = "ivy",
+				-- theme = "ivy",
 				find_command = {"fd"},
 				previewer = false,
 				hidden = true,
 			},
 
 			grep_string = {
-				theme = "ivy",
+				-- theme = "ivy",
 				find_command = {"rg"},
 				hidden = true,
 			},
 
 			live_grep = {
-				theme = "ivy",
+				-- theme = "ivy",
 				find_command = {"rg"},
 				hidden = true,
 			}
@@ -73,12 +73,12 @@ function config.telescope()
 
 		extensions = {
 			ui_select = {
-				theme = "ivy",
+				-- theme = "ivy",
 				find_command = {"fd"},
 			},
 
 			file_browser = {
-				theme = "ivy",
+				-- theme = "ivy",
 				find_command = {"fd"},
 				hidden = true,
 				files = false,

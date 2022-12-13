@@ -1,5 +1,5 @@
-local M = {}
-function M.config()
+local config = {}
+function config.markdown_preview()
 	-- set to 1, nvim will open the preview window after entering the markdown buffer
 	-- default: 0
 	vim.g.mkdp_auto_start = 0
@@ -100,4 +100,4 @@ function M.config()
 
 	end
 
-return M
+return config

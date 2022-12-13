@@ -48,3 +48,4 @@ nnoremap <silent> <leader>sd :SessionManager delete_session<CR>
 nnoremap <silent> <leader>e :wa<CR>:qa<CR>
 nnoremap <silent> <leader>- zfa{
 nnoremap <silent> <leader>= zo
+nnoremap <silent> <leader>md :MarkdownPreview<CR>

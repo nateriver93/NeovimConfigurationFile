@@ -8,8 +8,6 @@ lua require('statusline').config()
 lua require('autocomplete').config()
 " 启动画面
 lua require('startscreen').config()
-" Markdown
-lua require('markdown').config()
 " 启动加速
 lua require('speedup').config()
 " 按键映射
