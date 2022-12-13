@@ -32,6 +32,10 @@ end
 
 function config.telescope()
 	require('telescope').setup{
+		defaults = {
+			file_ignore_patterns = {"%.map", "%.obj", "%.o", "%.pbi", "%.html", "%.7z", "%.zip", "%.sln", "%.eww", "%.ewp"},
+		},
+
 		pickers = {
 			find_files = {
 				theme = "ivy",
@@ -101,6 +105,7 @@ function config.telescope()
 	--
 	require("telescope").load_extension("ui-select")
 	require("telescope").load_extension("file_browser")
+	require("telescope").load_extension("yank_history")
 	-- require('telescope').load_extension("fzf")
 end
 

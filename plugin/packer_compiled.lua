@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\NATERI~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\NATERI~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\NATERI~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\NATERI~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\NATERI~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
+local package_path_str = "C:\\Users\\su-25\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\su-25\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\su-25\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\su-25\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
+local install_cpath_pattern = "C:\\Users\\su-25\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,48 +76,48 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["alpha-nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\alpha-nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\alpha-nvim",
     url = "https://github.com/goolord/alpha-nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-cmdline"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   ["cmp-vsnip"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-vsnip",
     url = "https://github.com/hrsh7th/cmp-vsnip"
   },
   ["filetype.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\filetype.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\filetype.nvim",
     url = "https://github.com/nathom/filetype.nvim"
   },
   ["friendly-snippets"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["github-nvim-theme"] = {
-    config = { "\27LJ\2\n�\1\0\1\4\0\n\0\f5\1\5\0005\2\1\0009\3\0\0=\3\2\0029\3\3\0=\3\4\2=\2\6\0015\2\a\0=\2\b\0014\2\0\0=\2\t\1L\1\2\0\fTSField\19DiagnosticHint\1\0\1\tlink\30LspDiagnosticsDefaultHint\fhtmlTag\1\0\0\asp\thint\afg\1\0\2\nstyle\14underline\abg\f#282c34\bred�\2\1\0\5\0\16\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\0016\0\0\0'\2\n\0B\0\2\0029\0\2\0005\2\14\0005\3\f\0005\4\v\0=\4\r\3=\3\15\2B\0\2\1K\0\1\0\roverride\1\0\2\16color_icons\2\fdefault\2\bzsh\1\0\0\1\0\4\ticon\b\16cterm_color\a65\ncolor\f#428850\tname\bZsh\22nvim-web-devicons\14overrides\0\vcolors\1\0\2\nerror\f#ff0000\thint\vorange\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\16theme_style\tdark\19function_style\vitalic\nsetup\17github-theme\frequire\0" },
+    config = { "\27LJ\2\n�\1\0\1\4\0\n\0\f5\1\5\0005\2\1\0009\3\0\0=\3\2\0029\3\3\0=\3\4\2=\2\6\0015\2\a\0=\2\b\0014\2\0\0=\2\t\1L\1\2\0\fTSField\19DiagnosticHint\1\0\1\tlink\30LspDiagnosticsDefaultHint\fhtmlTag\1\0\0\asp\thint\afg\1\0\2\abg\f#282c34\nstyle\14underline\bred�\2\1\0\5\0\16\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\0016\0\0\0'\2\n\0B\0\2\0029\0\2\0005\2\14\0005\3\f\0005\4\v\0=\4\r\3=\3\15\2B\0\2\1K\0\1\0\roverride\1\0\2\fdefault\2\16color_icons\2\bzsh\1\0\0\1\0\4\tname\bZsh\ticon\b\16cterm_color\a65\ncolor\f#428850\22nvim-web-devicons\14overrides\0\vcolors\1\0\2\nerror\f#ff0000\thint\vorange\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\16theme_style\tdark\19function_style\vitalic\nsetup\17github-theme\frequire\0" },
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\github-nvim-theme",
     url = "https://github.com/projekt0n/github-nvim-theme"
   },
   ["hop.nvim"] = {
@@ -125,47 +125,47 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\hop.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\hop.nvim",
     url = "https://github.com/phaazon/hop.nvim"
   },
   ["impatient.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
   },
   ["lspkind-nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspkind-nvim",
     url = "https://github.com/onsails/lspkind-nvim"
   },
   ["lspsaga.nvim"] = {
-    config = { "\27LJ\2\n�\a\0\0\6\0\26\0!6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\r\0005\5\f\0=\5\14\0045\5\15\0=\5\16\4=\4\17\0035\4\18\0=\4\19\0035\4\20\0=\4\21\0035\4\22\0=\4\23\0034\4\0\0=\4\24\0034\4\0\0=\4\25\3B\1\2\0019\1\2\0B\1\1\1K\0\1\0\24server_filetype_map\16custom_kind\17show_outline\1\0\b\14virt_text\b┃\15auto_enter\2\14win_width\3<\rwin_with\5\17auto_preview\1\17win_position\nright\17auto_refresh\2\rjump_key\6o\27definition_action_keys\1\0\5\ttabe\v<C-c>t\vvsplit\v<C-c>v\nsplit\v<C-c>i\tedit\v<C-c>o\tquit\6q\21code_action_keys\1\0\2\texec\t<CR>\tquit\6q\23finder_action_keys\tquit\1\3\0\0\6q\n<ESC>\topen\1\0\3\ttabe\6t\nsplit\6i\vvsplit\6s\1\3\0\0\6o\t<CR>\17finder_icons\1\0\3\tlink\n  \bdef\n  \bref\t諭 \26code_action_lightbulb\1\0\a\tsign\2\16update_time\3�\1\17virtual_text\2\18sign_priority\3\20\venable\2\22cache_code_action\2\21enable_in_insert\2\22diagnostic_header\1\5\0\0\t \t \t \tﴞ \17move_in_saga\1\0\2\tnext\n<C-n>\tprev\n<C-p>\1\0\t\29code_action_num_shortcut\2\21code_action_icon\t💡\22max_preview_lines\3\n\24preview_lines_above\3\0\21rename_in_select\2\17border_style\frounded\23rename_action_quit\n<C-c>\18saga_winblend\3\0\27finder_request_timeout\3�\v\18init_lsp_saga\flspsaga\frequire\0" },
+    config = { "\27LJ\2\n�\a\0\0\6\0\26\0!6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\0035\4\n\0=\4\v\0035\4\r\0005\5\f\0=\5\14\0045\5\15\0=\5\16\4=\4\17\0035\4\18\0=\4\19\0035\4\20\0=\4\21\0035\4\22\0=\4\23\0034\4\0\0=\4\24\0034\4\0\0=\4\25\3B\1\2\0019\1\2\0B\1\1\1K\0\1\0\24server_filetype_map\16custom_kind\17show_outline\1\0\b\17auto_preview\1\17win_position\nright\rjump_key\6o\17auto_refresh\2\14virt_text\b┃\15auto_enter\2\14win_width\3<\rwin_with\5\27definition_action_keys\1\0\5\vvsplit\v<C-c>v\tquit\6q\nsplit\v<C-c>i\ttabe\v<C-c>t\tedit\v<C-c>o\21code_action_keys\1\0\2\tquit\6q\texec\t<CR>\23finder_action_keys\tquit\1\3\0\0\6q\n<ESC>\topen\1\0\3\nsplit\6i\ttabe\6t\vvsplit\6s\1\3\0\0\6o\t<CR>\17finder_icons\1\0\3\tlink\n  \bdef\n  \bref\t諭 \26code_action_lightbulb\1\0\a\18sign_priority\3\20\tsign\2\venable\2\21enable_in_insert\2\22cache_code_action\2\16update_time\3�\1\17virtual_text\2\22diagnostic_header\1\5\0\0\t \t \t \tﴞ \17move_in_saga\1\0\2\tnext\n<C-n>\tprev\n<C-p>\1\0\t\27finder_request_timeout\3�\v\29code_action_num_shortcut\2\21code_action_icon\t💡\22max_preview_lines\3\n\24preview_lines_above\3\0\21rename_in_select\2\23rename_action_quit\n<C-c>\18saga_winblend\3\0\17border_style\frounded\18init_lsp_saga\flspsaga\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\lspsaga.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\lspsaga.nvim",
     url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["markdown-preview.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\markdown-preview.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\markdown-preview.nvim",
     url = "https://github.com/iamcco/markdown-preview.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     config = { "\27LJ\2\nz\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21ensure_installed\1\0\0\1\4\0\0\16sumneko_lua\vclangd\nvimls\nsetup\20mason-lspconfig\frequire\0" },
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
   ["mason.nvim"] = {
     config = { "\27LJ\2\n�\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\aui\1\0\0\nicons\1\0\0\1\0\3\20package_pending\b➜\22package_installed\b✓\24package_uninstalled\b✗\nsetup\nmason\frequire\0" },
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["neovim-session-manager"] = {
@@ -175,12 +175,12 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\neovim-session-manager",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\neovim-session-manager",
     url = "https://github.com/Shatur/neovim-session-manager"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-comment"] = {
@@ -188,7 +188,7 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-comment",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
   ["nvim-lspconfig"] = {
@@ -196,42 +196,51 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-lspconfig",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\n�\22\0\0\b\0W\0m6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\0024\3\0\0=\3\5\0025\3\6\0005\4\a\0004\5\5\0005\6\b\0>\6\1\0055\6\n\0005\a\t\0=\a\v\6>\6\2\0055\6\f\0>\6\3\0055\6\14\0005\a\r\0=\a\v\6>\6\4\5=\5\15\4=\4\16\0035\4\17\0005\5\18\0=\5\19\4=\4\20\3=\3\21\0025\3\22\0005\4\23\0005\5\24\0=\5\25\4=\4\26\0035\4\27\0005\5\28\0=\5\29\0045\5\30\0005\6\31\0=\6 \0055\6!\0=\6\"\5=\5#\4=\4\25\0035\4$\0=\4%\3=\3&\0025\3'\0=\3(\0025\3)\0004\4\0\0=\4*\3=\3+\0024\3\0\0=\3,\0025\3-\0004\4\0\0=\4.\3=\3/\0025\0030\0005\0041\0=\4\25\3=\0032\0025\0033\0004\4\0\0=\0044\0035\0045\0=\0046\3=\0037\0025\0038\0=\0039\0025\3:\0=\3\"\0025\3;\0005\4<\0=\4=\0035\4>\0004\5\0\0=\0056\4=\4?\0035\4A\0005\5@\0=\5\19\4=\4B\0035\4C\0005\5D\0005\6F\0005\aE\0=\aG\0065\aH\0=\aI\6=\0066\5=\5J\4=\4K\0035\4L\0=\4M\3=\3N\0025\3O\0=\3P\0025\3Q\0=\3R\0025\3S\0005\4T\0=\4U\3=\3V\2B\0\2\1K\0\1\0\blog\ntypes\1\0\b\bdev\1\vconfig\1\16diagnostics\1\fprofile\1\bgit\1\fwatcher\1\15copy_paste\1\ball\1\1\0\2\rtruncate\1\venable\1\16live_filter\1\0\2\vprefix\15[FILTER]: \24always_show_folders\2\ntrash\1\0\2\20require_confirm\2\bcmd\14gio trash\factions\16remove_file\1\0\1\17close_window\2\14open_file\18window_picker\fbuftype\1\4\0\0\vnofile\rterminal\thelp\rfiletype\1\0\0\1\a\0\0\vnotify\vpacker\aqf\tdiff\rfugitive\18fugitiveblame\1\0\2\venable\2\nchars)ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\1\0\2\18resize_window\2\17quit_on_open\1\15file_popup\1\0\0\1\0\5\bcol\3\1\vborder\vshadow\nstyle\fminimal\rrelative\vcursor\brow\3\1\15expand_all\1\0\1\25max_folder_discovery\3�\2\15change_dir\1\0\3\23restrict_above_cwd\1\venable\2\vglobal\1\1\0\1\25use_system_clipboard\2\1\0\4\17show_on_dirs\2\venable\2\vignore\2\ftimeout\3�\3\24filesystem_watchers\1\0\2\19debounce_delay\0032\venable\2\ffilters\fexclude\1\4\0\0\t.map\t.dll\a.o\vcustom\1\0\1\rdotfiles\1\16diagnostics\1\0\4\fwarning\b\thint\b\nerror\b\tinfo\b\1\0\3\17show_on_dirs\1\venable\1\19debounce_delay\0032\16system_open\targs\1\0\1\bcmd\5\23ignore_ft_on_setup\24update_focused_file\16ignore_list\1\0\2\venable\1\16update_root\1\23hijack_directories\1\0\2\14auto_open\2\venable\2\rrenderer\18special_files\1\5\0\0\15Cargo.toml\rMakefile\14README.md\14readme.md\vglyphs\bgit\1\0\a\14untracked\b★\frenamed\b➜\fignored\b◌\runmerged\b\vstaged\b✓\runstaged\b✗\fdeleted\b\vfolder\1\0\b\fdefault\b\15empty_open\b\nempty\b\17arrow_closed\b\fsymlink\b\17symlink_open\b\15arrow_open\b\topen\b\1\0\3\fdefault\b\rbookmark\b\fsymlink\b\tshow\1\0\4\vfolder\2\17folder_arrow\2\bgit\2\tfile\2\1\0\4\18symlink_arrow\n ➛ \fpadding\6 \18git_placement\vbefore\18webdev_colors\2\19indent_markers\nicons\1\0\5\tnone\6 \vbottom\b─\titem\b│\tedge\b│\vcorner\b└\1\0\2\venable\1\18inline_arrows\2\1\0\b\17indent_width\3\2\25root_folder_modifier\a:~\27highlight_opened_files\tnone\14full_name\1\18highlight_git\1\16group_empty\1\17add_trailing\1\24symlink_destination\2\tview\nfloat\20open_win_config\1\0\6\bcol\3\1\vborder\frounded\brow\3\1\rrelative\veditor\vheight\3\30\nwidth\3\30\1\0\1\venable\1\rmappings\tlist\1\0\2\tmode\6n\vaction\15close_node\1\2\0\0\6h\1\0\2\vaction\5\bkey\t<BS>\bkey\1\0\2\tmode\6n\vaction\tedit\1\2\0\0\6l\1\0\2\vaction\5\bkey\6o\1\0\1\16custom_only\1\1\0\t\vnumber\1\15signcolumn\byes\19relativenumber\1 preserve_window_proportions\1\tside\tleft\21hide_root_folder\1\25centralize_selection\1\18adaptive_size\1\nwidth\3\30\14root_dirs\29ignore_buf_on_tab_change\1\0\19\19select_prompts\1\19remove_keymaps\1\14on_attach\fdisable\20respect_buf_cwd\1\23reload_on_bufenter\1\23sync_root_with_cwd\2\24prefer_startup_root\1\fsort_by\tname\25focus_empty_on_setup\1\16open_on_tab\1\23open_on_setup_file\1\18open_on_setup\1\27ignore_buffer_on_setup\1'hijack_unnamed_buffer_when_opening\1\17hijack_netrw\2\18hijack_cursor\1\18disable_netrw\1\28create_in_closed_folder\1\25auto_reload_on_write\2\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\n�\22\0\0\b\0W\0m6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\0024\3\0\0=\3\5\0025\3\6\0005\4\a\0004\5\5\0005\6\b\0>\6\1\0055\6\n\0005\a\t\0=\a\v\6>\6\2\0055\6\f\0>\6\3\0055\6\14\0005\a\r\0=\a\v\6>\6\4\5=\5\15\4=\4\16\0035\4\17\0005\5\18\0=\5\19\4=\4\20\3=\3\21\0025\3\22\0005\4\23\0005\5\24\0=\5\25\4=\4\26\0035\4\27\0005\5\28\0=\5\29\0045\5\30\0005\6\31\0=\6 \0055\6!\0=\6\"\5=\5#\4=\4\25\0035\4$\0=\4%\3=\3&\0025\3'\0=\3(\0025\3)\0004\4\0\0=\4*\3=\3+\0024\3\0\0=\3,\0025\3-\0004\4\0\0=\4.\3=\3/\0025\0030\0005\0041\0=\4\25\3=\0032\0025\0033\0004\4\0\0=\0044\0035\0045\0=\0046\3=\0037\0025\0038\0=\0039\0025\3:\0=\3\"\0025\3;\0005\4<\0=\4=\0035\4>\0004\5\0\0=\0056\4=\4?\0035\4A\0005\5@\0=\5\19\4=\4B\0035\4C\0005\5D\0005\6F\0005\aE\0=\aG\0065\aH\0=\aI\6=\0066\5=\5J\4=\4K\0035\4L\0=\4M\3=\3N\0025\3O\0=\3P\0025\3Q\0=\3R\0025\3S\0005\4T\0=\4U\3=\3V\2B\0\2\1K\0\1\0\blog\ntypes\1\0\b\ball\1\bdev\1\16diagnostics\1\fprofile\1\bgit\1\15copy_paste\1\fwatcher\1\vconfig\1\1\0\2\rtruncate\1\venable\1\16live_filter\1\0\2\24always_show_folders\2\vprefix\15[FILTER]: \ntrash\1\0\2\20require_confirm\2\bcmd\14gio trash\factions\16remove_file\1\0\1\17close_window\2\14open_file\18window_picker\fbuftype\1\4\0\0\vnofile\rterminal\thelp\rfiletype\1\0\0\1\a\0\0\vnotify\vpacker\aqf\tdiff\rfugitive\18fugitiveblame\1\0\2\nchars)ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\venable\2\1\0\2\18resize_window\2\17quit_on_open\1\15file_popup\1\0\0\1\0\5\nstyle\fminimal\vborder\vshadow\brow\3\1\bcol\3\1\rrelative\vcursor\15expand_all\1\0\1\25max_folder_discovery\3�\2\15change_dir\1\0\3\vglobal\1\23restrict_above_cwd\1\venable\2\1\0\1\25use_system_clipboard\2\1\0\4\venable\2\17show_on_dirs\2\vignore\2\ftimeout\3�\3\24filesystem_watchers\1\0\2\venable\2\19debounce_delay\0032\ffilters\fexclude\1\4\0\0\t.map\t.dll\a.o\vcustom\1\0\1\rdotfiles\1\16diagnostics\1\0\4\nerror\b\thint\b\fwarning\b\tinfo\b\1\0\3\19debounce_delay\0032\17show_on_dirs\1\venable\1\16system_open\targs\1\0\1\bcmd\5\23ignore_ft_on_setup\24update_focused_file\16ignore_list\1\0\2\venable\1\16update_root\1\23hijack_directories\1\0\2\venable\2\14auto_open\2\rrenderer\18special_files\1\5\0\0\15Cargo.toml\rMakefile\14README.md\14readme.md\vglyphs\bgit\1\0\a\runmerged\b\vstaged\b✓\runstaged\b✗\fdeleted\b\14untracked\b★\frenamed\b➜\fignored\b◌\vfolder\1\0\b\nempty\b\fdefault\b\15arrow_open\b\17symlink_open\b\17arrow_closed\b\topen\b\fsymlink\b\15empty_open\b\1\0\3\fsymlink\b\fdefault\b\rbookmark\b\tshow\1\0\4\vfolder\2\tfile\2\bgit\2\17folder_arrow\2\1\0\4\fpadding\6 \18git_placement\vbefore\18webdev_colors\2\18symlink_arrow\n ➛ \19indent_markers\nicons\1\0\5\titem\b│\vcorner\b└\tnone\6 \vbottom\b─\tedge\b│\1\0\2\venable\1\18inline_arrows\2\1\0\b\27highlight_opened_files\tnone\14full_name\1\18highlight_git\1\16group_empty\1\17add_trailing\1\24symlink_destination\2\17indent_width\3\2\25root_folder_modifier\a:~\tview\nfloat\20open_win_config\1\0\6\brow\3\1\vborder\frounded\vheight\3\30\nwidth\3\30\bcol\3\1\rrelative\veditor\1\0\1\venable\1\rmappings\tlist\1\0\2\vaction\15close_node\tmode\6n\1\2\0\0\6h\1\0\2\bkey\t<BS>\vaction\5\bkey\1\0\2\vaction\tedit\tmode\6n\1\2\0\0\6l\1\0\2\bkey\6o\vaction\5\1\0\1\16custom_only\1\1\0\t\tside\tleft\21hide_root_folder\1\25centralize_selection\1\18adaptive_size\1\nwidth\3\30\vnumber\1\15signcolumn\byes\19relativenumber\1 preserve_window_proportions\1\14root_dirs\29ignore_buf_on_tab_change\1\0\19\16open_on_tab\1\23open_on_setup_file\1\18open_on_setup\1\27ignore_buffer_on_setup\1'hijack_unnamed_buffer_when_opening\1\17hijack_netrw\2\18hijack_cursor\1\18disable_netrw\1\28create_in_closed_folder\1\25auto_reload_on_write\2\19select_prompts\1\19remove_keymaps\1\14on_attach\fdisable\20respect_buf_cwd\1\23reload_on_bufenter\1\23sync_root_with_cwd\2\24prefer_startup_root\1\fsort_by\tname\25focus_empty_on_setup\1\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    config = { "\27LJ\2\n�\1\0\0\4\0\t\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\0\0=\3\6\0025\3\a\0=\3\b\2B\0\2\1K\0\1\0\14highlight\1\0\2&additional_vim_regex_highlighting\1\venable\2\19ignore_install\21ensure_installed\1\0\1\17sync_install\2\1\6\0\0\6c\bcpp\bvim\blua\thelp\nsetup\28nvim-treesitter.configs\frequire\0" },
+    config = { "\27LJ\2\n�\1\0\0\4\0\t\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0024\3\0\0=\3\6\0025\3\a\0=\3\b\2B\0\2\1K\0\1\0\14highlight\1\0\2\venable\2&additional_vim_regex_highlighting\1\19ignore_install\21ensure_installed\1\0\1\17sync_install\2\1\6\0\0\6c\bcpp\bvim\blua\thelp\nsetup\28nvim-treesitter.configs\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-treesitter",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["onedark.vim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.vim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\onedark.vim",
     url = "https://github.com/joshdick/onedark.vim"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["sqlite.lua"] = {
+    load_after = {
+      ["yanky.nvim"] = true
+    },
+    loaded = false,
+    needs_bufread = false,
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\sqlite.lua",
+    url = "https://github.com/kkharji/sqlite.lua"
   },
   ["telescope-file-browser.nvim"] = {
     load_after = {
@@ -239,7 +248,7 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope-file-browser.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope-file-browser.nvim",
     url = "https://github.com/nvim-telescope/telescope-file-browser.nvim"
   },
   ["telescope-ui-select.nvim"] = {
@@ -248,46 +257,46 @@ _G.packer_plugins = {
     },
     loaded = false,
     needs_bufread = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope-ui-select.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope-ui-select.nvim",
     url = "https://github.com/nvim-telescope/telescope-ui-select.nvim"
   },
   ["telescope.nvim"] = {
-    after = { "telescope-file-browser.nvim", "telescope-ui-select.nvim" },
+    after = { "telescope-ui-select.nvim", "telescope-file-browser.nvim" },
     commands = { "Telescope" },
-    config = { "\27LJ\2\n�\4\0\0\6\0!\00056\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\20\0005\3\6\0005\4\3\0005\5\4\0=\5\5\4=\4\a\0035\4\b\0005\5\t\0=\5\5\4=\4\n\0035\4\v\0005\5\f\0=\5\5\4=\4\r\0035\4\14\0005\5\15\0=\5\5\4=\4\16\0035\4\17\0005\5\18\0=\5\5\4=\4\19\3=\3\21\0025\3\24\0005\4\22\0005\5\23\0=\5\5\4=\4\25\0035\4\26\0005\5\27\0=\5\5\0044\5\0\0=\5\28\4=\4\29\3=\3\30\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\31\0'\2 \0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0\31\0'\2\29\0B\0\2\1K\0\1\0\14ui-select\19load_extension\15extensions\17file_browser\rmappings\1\2\0\0\afd\1\0\4\nfiles\1\ntheme\bivy\vhidden\2\14previewer\1\14ui_select\1\0\0\1\2\0\0\afd\1\0\1\ntheme\bivy\fpickers\1\0\0\14live_grep\1\2\0\0\arg\1\0\2\vhidden\2\ntheme\bivy\16grep_string\1\2\0\0\arg\1\0\2\vhidden\2\ntheme\bivy\fbuffers\1\2\0\0\afd\1\0\3\14previewer\1\vhidden\2\ntheme\bivy\roldfiles\1\2\0\0\afd\1\0\3\14previewer\1\vhidden\2\ntheme\bivy\15find_files\1\0\0\17find_command\1\2\0\0\afd\1\0\3\14previewer\1\vhidden\2\ntheme\bivy\nsetup\14telescope\frequire\0" },
+    config = { "\27LJ\2\n�\6\0\0\6\0&\0?6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\v\0005\4\b\0005\5\t\0=\5\n\4=\4\f\0035\4\r\0005\5\14\0=\5\n\4=\4\15\0035\4\16\0005\5\17\0=\5\n\4=\4\18\0035\4\19\0005\5\20\0=\5\n\4=\4\21\0035\4\22\0005\5\23\0=\5\n\4=\4\24\3=\3\25\0025\3\28\0005\4\26\0005\5\27\0=\5\n\4=\4\29\0035\4\30\0005\5\31\0=\5\n\0044\5\0\0=\5 \4=\4!\3=\3\"\2B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0#\0'\2$\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0#\0'\2!\0B\0\2\0016\0\0\0'\2\1\0B\0\2\0029\0#\0'\2%\0B\0\2\1K\0\1\0\17yank_history\14ui-select\19load_extension\15extensions\17file_browser\rmappings\1\2\0\0\afd\1\0\4\nfiles\1\ntheme\bivy\vhidden\2\14previewer\1\14ui_select\1\0\0\1\2\0\0\afd\1\0\1\ntheme\bivy\fpickers\14live_grep\1\2\0\0\arg\1\0\2\vhidden\2\ntheme\bivy\16grep_string\1\2\0\0\arg\1\0\2\vhidden\2\ntheme\bivy\fbuffers\1\2\0\0\afd\1\0\3\14previewer\1\vhidden\2\ntheme\bivy\roldfiles\1\2\0\0\afd\1\0\3\14previewer\1\vhidden\2\ntheme\bivy\15find_files\1\0\0\17find_command\1\2\0\0\afd\1\0\3\14previewer\1\vhidden\2\ntheme\bivy\rdefaults\1\0\0\25file_ignore_patterns\1\0\0\1\v\0\0\n%.map\n%.obj\b%.o\n%.pbi\v%.html\t%.7z\n%.zip\n%.sln\n%.eww\n%.ewp\nsetup\14telescope\frequire\0" },
     load_after = {
       ["neovim-session-manager"] = true
     },
     loaded = false,
     needs_bufread = true,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["todo-comments.nvim"] = {
     commands = { "TodoTelescope" },
-    config = { "\27LJ\2\n�\t\0\0\6\0001\00096\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\a\0005\4\4\0005\5\5\0=\5\6\4=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0005\5\14\0=\5\6\4=\4\15\0035\4\16\0005\5\17\0=\5\6\4=\4\18\0035\4\19\0005\5\20\0=\5\6\4=\4\21\0035\4\22\0005\5\23\0=\5\6\4=\4\24\3=\3\25\0025\3\26\0=\3\27\0025\3\28\0004\4\0\0=\4\29\3=\3\30\0025\3 \0005\4\31\0=\4!\0035\4\"\0=\4#\0035\4$\0=\4%\0035\4&\0=\4'\0035\4(\0=\4)\0035\4*\0=\4+\3=\3,\0025\3-\0005\4.\0=\4/\3=\0030\2B\0\2\1K\0\1\0\vsearch\targs\1\6\0\0\18--color=never\17--no-heading\20--with-filename\18--line-number\r--column\1\0\2\fcommand\arg\fpattern\18\\b(KEYWORDS):\vcolors\ttest\1\3\0\0\15Identifier\f#FF00FF\fdefault\1\3\0\0\15Identifier\f#7C3AED\thint\1\3\0\0\19DiagnosticHint\f#10B981\tinfo\1\3\0\0\19DiagnosticInfo\f#2563EB\fwarning\1\4\0\0\22DiagnosticWarning\15WarningMsg\f#FBBF24\nerror\1\0\0\1\4\0\0\20DiagnosticError\rErrorMsg\f#DC2626\14highlight\fexclude\1\0\t\22multiline_context\3\n\fkeyword\twide\22multiline_pattern\a^.\14multiline\2\vbefore\5\nafter\afg\17max_line_len\3�\3\18comments_only\2\fpattern\22.*<(KEYWORDS)\\s*:\14gui_style\1\0\2\afg\tNONE\abg\tBOLD\rkeywords\tTEST\1\4\0\0\fTESTING\vPASSED\vFAILED\1\0\2\ticon\t⏲ \ncolor\ttest\tNOTE\1\2\0\0\tINFO\1\0\2\ticon\t \ncolor\thint\tPERF\1\4\0\0\nOPTIM\16PERFORMANCE\rOPTIMIZE\1\0\1\ticon\t \tWARN\1\3\0\0\fWARNING\bXXX\1\0\2\ticon\t \ncolor\fwarning\tHACK\1\0\2\ticon\t \ncolor\fwarning\tTODO\1\0\2\ticon\t \ncolor\tinfo\bFIX\1\0\0\balt\1\5\0\0\nFIXME\bBUG\nFIXIT\nISSUE\1\0\2\ticon\t \ncolor\nerror\1\0\3\19merge_keywords\2\18sign_priority\3\b\nsigns\2\nsetup\18todo-comments\frequire\0" },
+    config = { "\27LJ\2\n�\t\0\0\6\0001\00096\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\a\0005\4\4\0005\5\5\0=\5\6\4=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0005\5\14\0=\5\6\4=\4\15\0035\4\16\0005\5\17\0=\5\6\4=\4\18\0035\4\19\0005\5\20\0=\5\6\4=\4\21\0035\4\22\0005\5\23\0=\5\6\4=\4\24\3=\3\25\0025\3\26\0=\3\27\0025\3\28\0004\4\0\0=\4\29\3=\3\30\0025\3 \0005\4\31\0=\4!\0035\4\"\0=\4#\0035\4$\0=\4%\0035\4&\0=\4'\0035\4(\0=\4)\0035\4*\0=\4+\3=\3,\0025\3-\0005\4.\0=\4/\3=\0030\2B\0\2\1K\0\1\0\vsearch\targs\1\6\0\0\18--color=never\17--no-heading\20--with-filename\18--line-number\r--column\1\0\2\fpattern\18\\b(KEYWORDS):\fcommand\arg\vcolors\ttest\1\3\0\0\15Identifier\f#FF00FF\fdefault\1\3\0\0\15Identifier\f#7C3AED\thint\1\3\0\0\19DiagnosticHint\f#10B981\tinfo\1\3\0\0\19DiagnosticInfo\f#2563EB\fwarning\1\4\0\0\22DiagnosticWarning\15WarningMsg\f#FBBF24\nerror\1\0\0\1\4\0\0\20DiagnosticError\rErrorMsg\f#DC2626\14highlight\fexclude\1\0\t\22multiline_pattern\a^.\14multiline\2\vbefore\5\fkeyword\twide\17max_line_len\3�\3\18comments_only\2\nafter\afg\fpattern\22.*<(KEYWORDS)\\s*:\22multiline_context\3\n\14gui_style\1\0\2\abg\tBOLD\afg\tNONE\rkeywords\tTEST\1\4\0\0\fTESTING\vPASSED\vFAILED\1\0\2\ticon\t⏲ \ncolor\ttest\tNOTE\1\2\0\0\tINFO\1\0\2\ticon\t \ncolor\thint\tPERF\1\4\0\0\nOPTIM\16PERFORMANCE\rOPTIMIZE\1\0\1\ticon\t \tWARN\1\3\0\0\fWARNING\bXXX\1\0\2\ticon\t \ncolor\fwarning\tHACK\1\0\2\ncolor\fwarning\ticon\t \tTODO\1\0\2\ncolor\tinfo\ticon\t \bFIX\1\0\0\balt\1\5\0\0\nFIXME\bBUG\nFIXIT\nISSUE\1\0\2\ticon\t \ncolor\nerror\1\0\3\18sign_priority\3\b\19merge_keywords\2\nsigns\2\nsetup\18todo-comments\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\todo-comments.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\todo-comments.nvim",
     url = "https://github.com/folke/todo-comments.nvim"
   },
   ["trouble.nvim"] = {
     commands = { "Trouble", "TroubleToggle", "TroubleRefresh" },
-    config = { "\27LJ\2\n�\5\0\0\5\0\26\0\0296\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\3=\3\21\0025\3\22\0=\3\23\0025\3\24\0=\3\25\2B\0\2\1K\0\1\0\nsigns\1\0\5\thint\b\nother\b﫠\nerror\b\16information\b\fwarning\b\14auto_jump\1\2\0\0\20lsp_definitions\16action_keys\16toggle_fold\1\3\0\0\azA\aza\15open_folds\1\3\0\0\azR\azr\16close_folds\1\3\0\0\azM\azm\15jump_close\1\2\0\0\6o\ropen_tab\1\2\0\0\n<c-t>\16open_vsplit\1\2\0\0\n<c-v>\15open_split\1\2\0\0\n<c-x>\tjump\1\3\0\0\t<cr>\n<tab>\1\0\t\19toggle_preview\6P\16toggle_mode\6m\frefresh\6r\vcancel\n<esc>\nclose\6q\tnext\6j\rprevious\6k\fpreview\6p\nhover\6K\1\0\15\25use_diagnostic_signs\1\ngroup\2\rposition\vbottom\14fold_open\b\tmode\26workspace_diagnostics\16fold_closed\b\14auto_open\1\vheight\3\15\nwidth\0032\14auto_fold\1\17auto_preview\2\15auto_close\1\17indent_lines\2\fpadding\2\nicons\2\nsetup\ftrouble\frequire\0" },
+    config = { "\27LJ\2\n�\5\0\0\5\0\26\0\0296\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0005\4\5\0=\4\6\0035\4\a\0=\4\b\0035\4\t\0=\4\n\0035\4\v\0=\4\f\0035\4\r\0=\4\14\0035\4\15\0=\4\16\0035\4\17\0=\4\18\0035\4\19\0=\4\20\3=\3\21\0025\3\22\0=\3\23\0025\3\24\0=\3\25\2B\0\2\1K\0\1\0\nsigns\1\0\5\16information\b\thint\b\nerror\b\fwarning\b\nother\b﫠\14auto_jump\1\2\0\0\20lsp_definitions\16action_keys\16toggle_fold\1\3\0\0\azA\aza\15open_folds\1\3\0\0\azR\azr\16close_folds\1\3\0\0\azM\azm\15jump_close\1\2\0\0\6o\ropen_tab\1\2\0\0\n<c-t>\16open_vsplit\1\2\0\0\n<c-v>\15open_split\1\2\0\0\n<c-x>\tjump\1\3\0\0\t<cr>\n<tab>\1\0\t\vcancel\n<esc>\fpreview\6p\nhover\6K\19toggle_preview\6P\16toggle_mode\6m\frefresh\6r\nclose\6q\tnext\6j\rprevious\6k\1\0\15\14fold_open\b\16fold_closed\b\nicons\2\rposition\vbottom\vheight\3\15\14auto_open\1\ngroup\2\25use_diagnostic_signs\1\fpadding\2\tmode\26workspace_diagnostics\14auto_fold\1\17auto_preview\2\15auto_close\1\17indent_lines\2\nwidth\0032\nsetup\ftrouble\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\trouble.nvim",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
   },
   undotree = {
-    config = { "\27LJ\2\n�\2\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\3B\1\2\1K\0\1\0\fkeymaps\1\0\a\6q\tquit\6j\14move_next\t<cr>\17action_enter\6K\21move_change_prev\6k\14move_prev\6J\21move_change_next\6p\18enter_diffbuf\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rUndotree\17UndotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\2\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0" },
+    config = { "\27LJ\2\n�\2\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\1\2\0005\3\3\0005\4\4\0=\4\5\0035\4\6\0=\4\a\0035\4\b\0=\4\t\3B\1\2\1K\0\1\0\fkeymaps\1\0\a\6j\14move_next\6q\tquit\6k\14move_prev\t<cr>\17action_enter\6p\18enter_diffbuf\6K\21move_change_prev\6J\21move_change_next\vwindow\1\0\1\rwinblend\3\30\20ignore_filetype\1\a\0\0\rUndotree\17UndotreeDiff\aqf\20TelescopePrompt\18spectre_panel\17tsplayground\1\0\2\vlayout\16left_bottom\15float_diff\2\nsetup\rundotree\frequire\0" },
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\undotree",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\undotree",
     url = "https://github.com/jiaoshijie/undotree"
   },
   ["vim-startuptime"] = {
@@ -295,13 +304,22 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\vim-startuptime",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\vim-startuptime",
     url = "https://github.com/dstein64/vim-startuptime"
   },
   ["vim-vsnip"] = {
     loaded = true,
-    path = "C:\\Users\\Nateriver\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-vsnip",
     url = "https://github.com/hrsh7th/vim-vsnip"
+  },
+  ["yanky.nvim"] = {
+    after = { "sqlite.lua" },
+    config = { "\27LJ\2\n�\2\0\0\5\0\18\0\0216\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\0035\4\t\0=\4\n\3=\3\v\0025\3\f\0=\3\r\0025\3\14\0=\3\15\0025\3\16\0=\3\17\2B\0\2\1K\0\1\0\29preserve_cursor_position\1\0\1\fenabled\2\14highlight\1\0\3\fon_yank\2\von_put\2\ntimer\3�\3\21system_clipboard\1\0\1\19sync_with_ring\2\vpicker\14telescope\1\0\0\vselect\1\0\0\1\0\0\tring\1\0\0\1\0\4\fstorage\nshada\17cancel_event\vupdate!sync_with_numbered_registers\2\19history_length\3d\nsetup\nyanky\frequire\0" },
+    loaded = false,
+    needs_bufread = false,
+    only_cond = false,
+    path = "C:\\Users\\su-25\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\yanky.nvim",
+    url = "https://github.com/gbprod/yanky.nvim"
   }
 }
 
@@ -335,31 +353,31 @@ if not vim.g.packer_custom_loader_enabled then
   vim.g.packer_custom_loader_enabled = true
 end
 
+-- Config for: mason-lspconfig.nvim
+time([[Config for mason-lspconfig.nvim]], true)
+try_loadstring("\27LJ\2\nz\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21ensure_installed\1\0\0\1\4\0\0\16sumneko_lua\vclangd\nvimls\nsetup\20mason-lspconfig\frequire\0", "config", "mason-lspconfig.nvim")
+time([[Config for mason-lspconfig.nvim]], false)
 -- Config for: mason.nvim
 time([[Config for mason.nvim]], true)
 try_loadstring("\27LJ\2\n�\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\aui\1\0\0\nicons\1\0\0\1\0\3\20package_pending\b➜\22package_installed\b✓\24package_uninstalled\b✗\nsetup\nmason\frequire\0", "config", "mason.nvim")
 time([[Config for mason.nvim]], false)
 -- Config for: github-nvim-theme
 time([[Config for github-nvim-theme]], true)
-try_loadstring("\27LJ\2\n�\1\0\1\4\0\n\0\f5\1\5\0005\2\1\0009\3\0\0=\3\2\0029\3\3\0=\3\4\2=\2\6\0015\2\a\0=\2\b\0014\2\0\0=\2\t\1L\1\2\0\fTSField\19DiagnosticHint\1\0\1\tlink\30LspDiagnosticsDefaultHint\fhtmlTag\1\0\0\asp\thint\afg\1\0\2\nstyle\14underline\abg\f#282c34\bred�\2\1\0\5\0\16\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\0016\0\0\0'\2\n\0B\0\2\0029\0\2\0005\2\14\0005\3\f\0005\4\v\0=\4\r\3=\3\15\2B\0\2\1K\0\1\0\roverride\1\0\2\16color_icons\2\fdefault\2\bzsh\1\0\0\1\0\4\ticon\b\16cterm_color\a65\ncolor\f#428850\tname\bZsh\22nvim-web-devicons\14overrides\0\vcolors\1\0\2\nerror\f#ff0000\thint\vorange\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\16theme_style\tdark\19function_style\vitalic\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
+try_loadstring("\27LJ\2\n�\1\0\1\4\0\n\0\f5\1\5\0005\2\1\0009\3\0\0=\3\2\0029\3\3\0=\3\4\2=\2\6\0015\2\a\0=\2\b\0014\2\0\0=\2\t\1L\1\2\0\fTSField\19DiagnosticHint\1\0\1\tlink\30LspDiagnosticsDefaultHint\fhtmlTag\1\0\0\asp\thint\afg\1\0\2\abg\f#282c34\nstyle\14underline\bred�\2\1\0\5\0\16\0\0236\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0023\3\b\0=\3\t\2B\0\2\0016\0\0\0'\2\n\0B\0\2\0029\0\2\0005\2\14\0005\3\f\0005\4\v\0=\4\r\3=\3\15\2B\0\2\1K\0\1\0\roverride\1\0\2\fdefault\2\16color_icons\2\bzsh\1\0\0\1\0\4\tname\bZsh\ticon\b\16cterm_color\a65\ncolor\f#428850\22nvim-web-devicons\14overrides\0\vcolors\1\0\2\nerror\f#ff0000\thint\vorange\rsidebars\1\5\0\0\aqf\15vista_kind\rterminal\vpacker\1\0\2\16theme_style\tdark\19function_style\vitalic\nsetup\17github-theme\frequire\0", "config", "github-nvim-theme")
 time([[Config for github-nvim-theme]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n�\22\0\0\b\0W\0m6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\0024\3\0\0=\3\5\0025\3\6\0005\4\a\0004\5\5\0005\6\b\0>\6\1\0055\6\n\0005\a\t\0=\a\v\6>\6\2\0055\6\f\0>\6\3\0055\6\14\0005\a\r\0=\a\v\6>\6\4\5=\5\15\4=\4\16\0035\4\17\0005\5\18\0=\5\19\4=\4\20\3=\3\21\0025\3\22\0005\4\23\0005\5\24\0=\5\25\4=\4\26\0035\4\27\0005\5\28\0=\5\29\0045\5\30\0005\6\31\0=\6 \0055\6!\0=\6\"\5=\5#\4=\4\25\0035\4$\0=\4%\3=\3&\0025\3'\0=\3(\0025\3)\0004\4\0\0=\4*\3=\3+\0024\3\0\0=\3,\0025\3-\0004\4\0\0=\4.\3=\3/\0025\0030\0005\0041\0=\4\25\3=\0032\0025\0033\0004\4\0\0=\0044\0035\0045\0=\0046\3=\0037\0025\0038\0=\0039\0025\3:\0=\3\"\0025\3;\0005\4<\0=\4=\0035\4>\0004\5\0\0=\0056\4=\4?\0035\4A\0005\5@\0=\5\19\4=\4B\0035\4C\0005\5D\0005\6F\0005\aE\0=\aG\0065\aH\0=\aI\6=\0066\5=\5J\4=\4K\0035\4L\0=\4M\3=\3N\0025\3O\0=\3P\0025\3Q\0=\3R\0025\3S\0005\4T\0=\4U\3=\3V\2B\0\2\1K\0\1\0\blog\ntypes\1\0\b\bdev\1\vconfig\1\16diagnostics\1\fprofile\1\bgit\1\fwatcher\1\15copy_paste\1\ball\1\1\0\2\rtruncate\1\venable\1\16live_filter\1\0\2\vprefix\15[FILTER]: \24always_show_folders\2\ntrash\1\0\2\20require_confirm\2\bcmd\14gio trash\factions\16remove_file\1\0\1\17close_window\2\14open_file\18window_picker\fbuftype\1\4\0\0\vnofile\rterminal\thelp\rfiletype\1\0\0\1\a\0\0\vnotify\vpacker\aqf\tdiff\rfugitive\18fugitiveblame\1\0\2\venable\2\nchars)ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\1\0\2\18resize_window\2\17quit_on_open\1\15file_popup\1\0\0\1\0\5\bcol\3\1\vborder\vshadow\nstyle\fminimal\rrelative\vcursor\brow\3\1\15expand_all\1\0\1\25max_folder_discovery\3�\2\15change_dir\1\0\3\23restrict_above_cwd\1\venable\2\vglobal\1\1\0\1\25use_system_clipboard\2\1\0\4\17show_on_dirs\2\venable\2\vignore\2\ftimeout\3�\3\24filesystem_watchers\1\0\2\19debounce_delay\0032\venable\2\ffilters\fexclude\1\4\0\0\t.map\t.dll\a.o\vcustom\1\0\1\rdotfiles\1\16diagnostics\1\0\4\fwarning\b\thint\b\nerror\b\tinfo\b\1\0\3\17show_on_dirs\1\venable\1\19debounce_delay\0032\16system_open\targs\1\0\1\bcmd\5\23ignore_ft_on_setup\24update_focused_file\16ignore_list\1\0\2\venable\1\16update_root\1\23hijack_directories\1\0\2\14auto_open\2\venable\2\rrenderer\18special_files\1\5\0\0\15Cargo.toml\rMakefile\14README.md\14readme.md\vglyphs\bgit\1\0\a\14untracked\b★\frenamed\b➜\fignored\b◌\runmerged\b\vstaged\b✓\runstaged\b✗\fdeleted\b\vfolder\1\0\b\fdefault\b\15empty_open\b\nempty\b\17arrow_closed\b\fsymlink\b\17symlink_open\b\15arrow_open\b\topen\b\1\0\3\fdefault\b\rbookmark\b\fsymlink\b\tshow\1\0\4\vfolder\2\17folder_arrow\2\bgit\2\tfile\2\1\0\4\18symlink_arrow\n ➛ \fpadding\6 \18git_placement\vbefore\18webdev_colors\2\19indent_markers\nicons\1\0\5\tnone\6 \vbottom\b─\titem\b│\tedge\b│\vcorner\b└\1\0\2\venable\1\18inline_arrows\2\1\0\b\17indent_width\3\2\25root_folder_modifier\a:~\27highlight_opened_files\tnone\14full_name\1\18highlight_git\1\16group_empty\1\17add_trailing\1\24symlink_destination\2\tview\nfloat\20open_win_config\1\0\6\bcol\3\1\vborder\frounded\brow\3\1\rrelative\veditor\vheight\3\30\nwidth\3\30\1\0\1\venable\1\rmappings\tlist\1\0\2\tmode\6n\vaction\15close_node\1\2\0\0\6h\1\0\2\vaction\5\bkey\t<BS>\bkey\1\0\2\tmode\6n\vaction\tedit\1\2\0\0\6l\1\0\2\vaction\5\bkey\6o\1\0\1\16custom_only\1\1\0\t\vnumber\1\15signcolumn\byes\19relativenumber\1 preserve_window_proportions\1\tside\tleft\21hide_root_folder\1\25centralize_selection\1\18adaptive_size\1\nwidth\3\30\14root_dirs\29ignore_buf_on_tab_change\1\0\19\19select_prompts\1\19remove_keymaps\1\14on_attach\fdisable\20respect_buf_cwd\1\23reload_on_bufenter\1\23sync_root_with_cwd\2\24prefer_startup_root\1\fsort_by\tname\25focus_empty_on_setup\1\16open_on_tab\1\23open_on_setup_file\1\18open_on_setup\1\27ignore_buffer_on_setup\1'hijack_unnamed_buffer_when_opening\1\17hijack_netrw\2\18hijack_cursor\1\18disable_netrw\1\28create_in_closed_folder\1\25auto_reload_on_write\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\2\n�\22\0\0\b\0W\0m6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0004\3\0\0=\3\4\0024\3\0\0=\3\5\0025\3\6\0005\4\a\0004\5\5\0005\6\b\0>\6\1\0055\6\n\0005\a\t\0=\a\v\6>\6\2\0055\6\f\0>\6\3\0055\6\14\0005\a\r\0=\a\v\6>\6\4\5=\5\15\4=\4\16\0035\4\17\0005\5\18\0=\5\19\4=\4\20\3=\3\21\0025\3\22\0005\4\23\0005\5\24\0=\5\25\4=\4\26\0035\4\27\0005\5\28\0=\5\29\0045\5\30\0005\6\31\0=\6 \0055\6!\0=\6\"\5=\5#\4=\4\25\0035\4$\0=\4%\3=\3&\0025\3'\0=\3(\0025\3)\0004\4\0\0=\4*\3=\3+\0024\3\0\0=\3,\0025\3-\0004\4\0\0=\4.\3=\3/\0025\0030\0005\0041\0=\4\25\3=\0032\0025\0033\0004\4\0\0=\0044\0035\0045\0=\0046\3=\0037\0025\0038\0=\0039\0025\3:\0=\3\"\0025\3;\0005\4<\0=\4=\0035\4>\0004\5\0\0=\0056\4=\4?\0035\4A\0005\5@\0=\5\19\4=\4B\0035\4C\0005\5D\0005\6F\0005\aE\0=\aG\0065\aH\0=\aI\6=\0066\5=\5J\4=\4K\0035\4L\0=\4M\3=\3N\0025\3O\0=\3P\0025\3Q\0=\3R\0025\3S\0005\4T\0=\4U\3=\3V\2B\0\2\1K\0\1\0\blog\ntypes\1\0\b\ball\1\bdev\1\16diagnostics\1\fprofile\1\bgit\1\15copy_paste\1\fwatcher\1\vconfig\1\1\0\2\rtruncate\1\venable\1\16live_filter\1\0\2\24always_show_folders\2\vprefix\15[FILTER]: \ntrash\1\0\2\20require_confirm\2\bcmd\14gio trash\factions\16remove_file\1\0\1\17close_window\2\14open_file\18window_picker\fbuftype\1\4\0\0\vnofile\rterminal\thelp\rfiletype\1\0\0\1\a\0\0\vnotify\vpacker\aqf\tdiff\rfugitive\18fugitiveblame\1\0\2\nchars)ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\venable\2\1\0\2\18resize_window\2\17quit_on_open\1\15file_popup\1\0\0\1\0\5\nstyle\fminimal\vborder\vshadow\brow\3\1\bcol\3\1\rrelative\vcursor\15expand_all\1\0\1\25max_folder_discovery\3�\2\15change_dir\1\0\3\vglobal\1\23restrict_above_cwd\1\venable\2\1\0\1\25use_system_clipboard\2\1\0\4\venable\2\17show_on_dirs\2\vignore\2\ftimeout\3�\3\24filesystem_watchers\1\0\2\venable\2\19debounce_delay\0032\ffilters\fexclude\1\4\0\0\t.map\t.dll\a.o\vcustom\1\0\1\rdotfiles\1\16diagnostics\1\0\4\nerror\b\thint\b\fwarning\b\tinfo\b\1\0\3\19debounce_delay\0032\17show_on_dirs\1\venable\1\16system_open\targs\1\0\1\bcmd\5\23ignore_ft_on_setup\24update_focused_file\16ignore_list\1\0\2\venable\1\16update_root\1\23hijack_directories\1\0\2\venable\2\14auto_open\2\rrenderer\18special_files\1\5\0\0\15Cargo.toml\rMakefile\14README.md\14readme.md\vglyphs\bgit\1\0\a\runmerged\b\vstaged\b✓\runstaged\b✗\fdeleted\b\14untracked\b★\frenamed\b➜\fignored\b◌\vfolder\1\0\b\nempty\b\fdefault\b\15arrow_open\b\17symlink_open\b\17arrow_closed\b\topen\b\fsymlink\b\15empty_open\b\1\0\3\fsymlink\b\fdefault\b\rbookmark\b\tshow\1\0\4\vfolder\2\tfile\2\bgit\2\17folder_arrow\2\1\0\4\fpadding\6 \18git_placement\vbefore\18webdev_colors\2\18symlink_arrow\n ➛ \19indent_markers\nicons\1\0\5\titem\b│\vcorner\b└\tnone\6 \vbottom\b─\tedge\b│\1\0\2\venable\1\18inline_arrows\2\1\0\b\27highlight_opened_files\tnone\14full_name\1\18highlight_git\1\16group_empty\1\17add_trailing\1\24symlink_destination\2\17indent_width\3\2\25root_folder_modifier\a:~\tview\nfloat\20open_win_config\1\0\6\brow\3\1\vborder\frounded\vheight\3\30\nwidth\3\30\bcol\3\1\rrelative\veditor\1\0\1\venable\1\rmappings\tlist\1\0\2\vaction\15close_node\tmode\6n\1\2\0\0\6h\1\0\2\bkey\t<BS>\vaction\5\bkey\1\0\2\vaction\tedit\tmode\6n\1\2\0\0\6l\1\0\2\bkey\6o\vaction\5\1\0\1\16custom_only\1\1\0\t\tside\tleft\21hide_root_folder\1\25centralize_selection\1\18adaptive_size\1\nwidth\3\30\vnumber\1\15signcolumn\byes\19relativenumber\1 preserve_window_proportions\1\14root_dirs\29ignore_buf_on_tab_change\1\0\19\16open_on_tab\1\23open_on_setup_file\1\18open_on_setup\1\27ignore_buffer_on_setup\1'hijack_unnamed_buffer_when_opening\1\17hijack_netrw\2\18hijack_cursor\1\18disable_netrw\1\28create_in_closed_folder\1\25auto_reload_on_write\2\19select_prompts\1\19remove_keymaps\1\14on_attach\fdisable\20respect_buf_cwd\1\23reload_on_bufenter\1\23sync_root_with_cwd\2\24prefer_startup_root\1\fsort_by\tname\25focus_empty_on_setup\1\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: mason-lspconfig.nvim
-time([[Config for mason-lspconfig.nvim]], true)
-try_loadstring("\27LJ\2\nz\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\2B\0\2\1K\0\1\0\21ensure_installed\1\0\0\1\4\0\0\16sumneko_lua\vclangd\nvimls\nsetup\20mason-lspconfig\frequire\0", "config", "mason-lspconfig.nvim")
-time([[Config for mason-lspconfig.nvim]], false)
 
 -- Command lazy-loads
 time([[Defining lazy-load commands]], true)
-pcall(vim.api.nvim_create_user_command, 'Telescope', function(cmdargs)
-          require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+pcall(vim.api.nvim_create_user_command, 'TodoTelescope', function(cmdargs)
+          require('packer.load')({'todo-comments.nvim'}, { cmd = 'TodoTelescope', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
         {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope' }, _G.packer_plugins)
-          return vim.fn.getcompletion('Telescope ', 'cmdline')
+          require('packer.load')({'todo-comments.nvim'}, { cmd = 'TodoTelescope' }, _G.packer_plugins)
+          return vim.fn.getcompletion('TodoTelescope ', 'cmdline')
       end})
 pcall(vim.api.nvim_create_user_command, 'StartupTime', function(cmdargs)
           require('packer.load')({'vim-startuptime'}, { cmd = 'StartupTime', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
@@ -368,33 +386,12 @@ pcall(vim.api.nvim_create_user_command, 'StartupTime', function(cmdargs)
           require('packer.load')({'vim-startuptime'}, { cmd = 'StartupTime' }, _G.packer_plugins)
           return vim.fn.getcompletion('StartupTime ', 'cmdline')
       end})
-pcall(vim.api.nvim_create_user_command, 'Trouble', function(cmdargs)
-          require('packer.load')({'trouble.nvim'}, { cmd = 'Trouble', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'trouble.nvim'}, { cmd = 'Trouble' }, _G.packer_plugins)
-          return vim.fn.getcompletion('Trouble ', 'cmdline')
-      end})
 pcall(vim.api.nvim_create_user_command, 'TroubleToggle', function(cmdargs)
           require('packer.load')({'trouble.nvim'}, { cmd = 'TroubleToggle', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
         end,
         {nargs = '*', range = true, bang = true, complete = function()
           require('packer.load')({'trouble.nvim'}, { cmd = 'TroubleToggle' }, _G.packer_plugins)
           return vim.fn.getcompletion('TroubleToggle ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'SessionManager', function(cmdargs)
-          require('packer.load')({'neovim-session-manager'}, { cmd = 'SessionManager', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'neovim-session-manager'}, { cmd = 'SessionManager' }, _G.packer_plugins)
-          return vim.fn.getcompletion('SessionManager ', 'cmdline')
-      end})
-pcall(vim.api.nvim_create_user_command, 'TodoTelescope', function(cmdargs)
-          require('packer.load')({'todo-comments.nvim'}, { cmd = 'TodoTelescope', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
-        end,
-        {nargs = '*', range = true, bang = true, complete = function()
-          require('packer.load')({'todo-comments.nvim'}, { cmd = 'TodoTelescope' }, _G.packer_plugins)
-          return vim.fn.getcompletion('TodoTelescope ', 'cmdline')
       end})
 pcall(vim.api.nvim_create_user_command, 'TroubleRefresh', function(cmdargs)
           require('packer.load')({'trouble.nvim'}, { cmd = 'TroubleRefresh', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
@@ -403,15 +400,36 @@ pcall(vim.api.nvim_create_user_command, 'TroubleRefresh', function(cmdargs)
           require('packer.load')({'trouble.nvim'}, { cmd = 'TroubleRefresh' }, _G.packer_plugins)
           return vim.fn.getcompletion('TroubleRefresh ', 'cmdline')
       end})
+pcall(vim.api.nvim_create_user_command, 'Telescope', function(cmdargs)
+          require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'telescope.nvim'}, { cmd = 'Telescope' }, _G.packer_plugins)
+          return vim.fn.getcompletion('Telescope ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'SessionManager', function(cmdargs)
+          require('packer.load')({'neovim-session-manager'}, { cmd = 'SessionManager', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'neovim-session-manager'}, { cmd = 'SessionManager' }, _G.packer_plugins)
+          return vim.fn.getcompletion('SessionManager ', 'cmdline')
+      end})
+pcall(vim.api.nvim_create_user_command, 'Trouble', function(cmdargs)
+          require('packer.load')({'trouble.nvim'}, { cmd = 'Trouble', l1 = cmdargs.line1, l2 = cmdargs.line2, bang = cmdargs.bang, args = cmdargs.args, mods = cmdargs.mods }, _G.packer_plugins)
+        end,
+        {nargs = '*', range = true, bang = true, complete = function()
+          require('packer.load')({'trouble.nvim'}, { cmd = 'Trouble' }, _G.packer_plugins)
+          return vim.fn.getcompletion('Trouble ', 'cmdline')
+      end})
 time([[Defining lazy-load commands]], false)
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Event lazy-loads
 time([[Defining lazy-load event autocommands]], true)
-vim.cmd [[au BufReadPost * ++once lua require("packer.load")({'hop.nvim', 'nvim-comment', 'nvim-treesitter'}, { event = "BufReadPost *" }, _G.packer_plugins)]]
-vim.cmd [[au BufReadPre * ++once lua require("packer.load")({'nvim-lspconfig'}, { event = "BufReadPre *" }, _G.packer_plugins)]]
 vim.cmd [[au LspAttach * ++once lua require("packer.load")({'lspsaga.nvim'}, { event = "LspAttach *" }, _G.packer_plugins)]]
+vim.cmd [[au BufReadPost * ++once lua require("packer.load")({'hop.nvim', 'nvim-treesitter', 'nvim-comment', 'yanky.nvim'}, { event = "BufReadPost *" }, _G.packer_plugins)]]
+vim.cmd [[au BufReadPre * ++once lua require("packer.load")({'nvim-lspconfig'}, { event = "BufReadPre *" }, _G.packer_plugins)]]
 time([[Defining lazy-load event autocommands]], false)
 vim.cmd("augroup END")
 

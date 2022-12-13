@@ -85,11 +85,13 @@ return require('packer').startup(function(use)
 		cmd = { "Trouble", "TroubleToggle", "TroubleRefresh" },
 		config = require('filesearch').trouble,
 	}
-	-- use {
-	-- 	'gbprod/yanky.nvim',
-	-- 	opt = false,
-	-- 	config = require('filesearch').yanky,
-	-- }
+	use {
+		'gbprod/yanky.nvim',
+		requires = { "kkharji/sqlite.lua" },
+		opt = true,
+		event = "BufReadPost",
+		config = require('filesearch').yanky,
+	}
 	-- lsp
 	use {
 		"neovim/nvim-lspconfig",
