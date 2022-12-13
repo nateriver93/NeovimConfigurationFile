@@ -23,7 +23,9 @@ return require('packer').startup(function(use)
 	use 'joshdick/onedark.vim'
 	use {
 	  'nvim-lualine/lualine.nvim',
-	  requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+	  requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+	  opt = false,
+	  config = require('statusline').lualine,
 	}
 
 	use {
@@ -138,6 +140,8 @@ return require('packer').startup(function(use)
 	use {
 		'goolord/alpha-nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' },
+		opt = false,
+		config = require('startscreen').alpha,
 	}
 	--
 	-- Markdown
@@ -155,7 +159,12 @@ return require('packer').startup(function(use)
 		opt = true,
 		cmd = "StartupTime",
 	}
-	use 'lewis6991/impatient.nvim'
+
+	use {
+		 'lewis6991/impatient.nvim',
+		 opt = false,
+		 config = require('speedup').impatient,
+	}
 	use 'nathom/filetype.nvim'
 
 	-- Comment

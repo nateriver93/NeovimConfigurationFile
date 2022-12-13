@@ -1,5 +1,5 @@
-local M = {}
-function M.config()
+local config = {}
+function config.alpha()
 	local alpha = require'alpha'
 	local dashboard = require'alpha.themes.dashboard'
 	dashboard.section.header.val = {
@@ -32,4 +32,4 @@ function M.config()
 --	require'alpha'.setup(require'alpha.themes.startify'.config)
 end
 
-return M
+return config

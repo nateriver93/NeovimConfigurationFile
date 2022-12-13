@@ -1,5 +1,5 @@
-local M = {}
-function M.config()
+local config = {}
+function config.impatient()
 	local impatient = require("impatient")
 
 	impatient.enable_profile()
@@ -7,4 +7,4 @@ function M.config()
 	require("filetype").setup({})
 end
 
-return M
+return config
