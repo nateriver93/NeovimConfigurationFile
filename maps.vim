@@ -41,7 +41,7 @@ nnoremap <silent> <leader>fb :Telescope buffers<CR>
 nnoremap <silent> <leader>ft :TodoTelescope<CR>
 nnoremap <silent> <leader>fe :TroubleToggl<CR>
 nnoremap <silent> <leader>n :Lspsaga lsp_finder<CR>
-nnoremap <silent> <leader>u :LSoutlineToggle<CR>
+nnoremap <silent> <leader>u :Lspsaga outline<CR>
 nnoremap <silent> <leader>sl :SessionManager load_session<CR>
 nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
 nnoremap <silent> <leader>sd :SessionManager delete_session<CR>

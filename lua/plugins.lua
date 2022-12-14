@@ -15,10 +15,15 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	-- theme
 	use 'kyazdani42/nvim-web-devicons'
+	-- use {
+	-- 	'projekt0n/github-nvim-theme',
+	-- 	opt = false,
+	-- 	config = require('themeconfig').github_theme,
+	-- }
 	use {
-		'projekt0n/github-nvim-theme',
+		'EdenEast/nightfox.nvim',
 		opt = false,
-		config = require('themeconfig').github_theme,
+		config = require('themeconfig').nightfox,
 	}
 	use 'joshdick/onedark.vim'
 	use {

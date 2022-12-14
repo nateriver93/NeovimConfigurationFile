@@ -19,9 +19,6 @@ set number
 " 显示相对行号，便于 nj/nk 跳转
 set relativenumber number
 
-" 主题设置
-"colorscheme onedark
-
 " paste模式
 set pastetoggle=<F2>
 
@@ -85,8 +82,8 @@ let mapleader=" "
 set mouse=c
 
 " theme
-colorscheme github_dark_default
-
+" colorscheme github_dark_default
+colorscheme nightfox
 cd ~
 
 " Improve Neovim startup time by disabling python and host check
