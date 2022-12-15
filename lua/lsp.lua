@@ -109,7 +109,7 @@ local config = {}
 			  --set special filetype win that outline window split.like NvimTree neotree
 			  -- defx, db_ui
 			  win_with = '',
-			  win_width = 60,
+			  win_width = 40,
 			  auto_enter = true,
 			  auto_preview = false,
 			  virt_text = '┃',
