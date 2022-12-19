@@ -128,6 +128,7 @@ return require('packer').startup(function(use)
 		branch = "main",
 		opt = true,
 		event = "LspAttach",
+		cmd = "Lspsaga",
 		config = require('lsp').lspsaga,
 	}
 	-- auto complete
