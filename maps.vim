@@ -36,9 +36,9 @@ nnoremap <silent> <leader>ff :Telescope find_files<CR>
 nnoremap <silent> <leader>fp :Telescope file_browser<CR>
 nnoremap <silent> <leader>fo :Telescope oldfiles<CR>
 nnoremap <silent> <leader>fl :Telescope live_grep<CR>
-nnoremap <silent> <leader>f<leader>l :Telescope live_grep search_dirs=%<CR>
+nnoremap <silent> <leader><leader>fl :Telescope live_grep search_dirs=%<CR>
 nnoremap <silent> <leader>fs :Telescope grep_string<CR>
-nnoremap <silent> <leader>f<leader>s :Telescope grep_string search_dirs=%<CR>
+nnoremap <silent> <leader><leader>fs :Telescope grep_string search_dirs=%<CR>
 nnoremap <silent> <leader>fb :Telescope buffers<CR>
 nnoremap <silent> <leader>ft :TodoTelescope<CR>
 nnoremap <silent> <leader>fe :TroubleToggl<CR>
