@@ -131,6 +131,13 @@ return require('packer').startup(function(use)
 		cmd = "Lspsaga",
 		config = require('lsp').lspsaga,
 	}
+	use {
+		"dnlhc/glance.nvim",
+		opt = true,
+		event = "LspAttach",
+		cmd = "Glance",
+		config = require('lsp').glance,
+	}
 	-- auto complete
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'

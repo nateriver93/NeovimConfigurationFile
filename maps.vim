@@ -22,7 +22,6 @@ nnoremap <a-i> <C-i>
 nnoremap <a-o> <C-o>
 nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>g G
 nnoremap <leader>a A
 nnoremap <leader>i I
 nnoremap <leader>r <C-r>
@@ -32,6 +31,7 @@ nnoremap mm :HopChar2MW<CR>
 
 nnoremap <silent> <leader>tt :NvimTreeToggle<CR>
 nnoremap <silent> <leader>tu :lua require('undotree').toggle()<CR>
+" f: find
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
 nnoremap <silent> <leader>fp :Telescope file_browser<CR>
 nnoremap <silent> <leader>fo :Telescope oldfiles<CR>
@@ -42,7 +42,10 @@ nnoremap <silent> <leader><leader>fs :Telescope grep_string search_dirs=%<CR>
 nnoremap <silent> <leader>fb :Telescope buffers<CR>
 nnoremap <silent> <leader>ft :TodoTelescope<CR>
 nnoremap <silent> <leader>fe :TroubleToggl<CR>
-nnoremap <silent> <leader>n :Lspsaga lsp_finder<CR>
+" g: go to
+nnoremap <silent> <leader>gg G
+nnoremap <silent> <leader>gr :Glance references<CR>
+
 nnoremap <silent> <leader>u :Lspsaga outline<CR>
 nnoremap <silent> <leader>sl :SessionManager load_session<CR>
 nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
