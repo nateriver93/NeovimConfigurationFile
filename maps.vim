@@ -22,8 +22,6 @@ nnoremap <a-i> <C-i>
 nnoremap <a-o> <C-o>
 nnoremap <leader>w :w!<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader>a A
-nnoremap <leader>i I
 nnoremap <leader>r <C-r>
 nnoremap <leader>o O
 nnoremap <leader>x "0diwh"*p
@@ -43,13 +41,17 @@ nnoremap <silent> <leader>fb :Telescope buffers<CR>
 nnoremap <silent> <leader>ft :TodoTelescope<CR>
 nnoremap <silent> <leader>fe :TroubleToggl<CR>
 " g: go to
+nnoremap <silent> <leader>ga A
+nnoremap <silent> <leader>gi I
 nnoremap <silent> <leader>gg G
-nnoremap <silent> <leader>gr :Glance references<CR>
+nnoremap <silent> <leader>gn :Glance references<CR>
 
 nnoremap <silent> <leader>u :Lspsaga outline<CR>
+" s: session
 nnoremap <silent> <leader>sl :SessionManager load_session<CR>
 nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
 nnoremap <silent> <leader>sd :SessionManager delete_session<CR>
+
 nnoremap <silent> <leader>e :wa<CR>:qa<CR>
 nnoremap <silent> <leader>- zfa{
 nnoremap <silent> <leader>= zo
