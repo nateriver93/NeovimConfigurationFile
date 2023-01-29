@@ -11,11 +11,12 @@ nnoremap <silent> <a-i> <C-i>
 nnoremap <silent> <a-o> <C-o>
 nnoremap <silent> <leader>w :w!<CR>
 nnoremap <silent> <leader>q :q<CR>
+nnoremap <silent> <leader><leader>q :wa<CR>:qa<CR>
 nnoremap <silent> <leader>r <C-r>
 nnoremap <silent> <leader>o O
 nnoremap <silent> <leader>x "0diwh"*p
-nnoremap <silent> <leader>h gd
-nnoremap <silent> <leader>e :wa<CR>:qa<CR>
+nnoremap <silent> <leader>h gd<C-o>
+nnoremap <silent> <leader><leader>h :noh<CR>
 nnoremap <silent> <leader>- zfa{
 nnoremap <silent> <leader>= zo
 nnoremap <silent> <leader>md :MarkdownPreview<CR>
