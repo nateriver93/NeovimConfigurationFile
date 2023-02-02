@@ -20,10 +20,6 @@ nnoremap <silent> <leader><leader>h :noh<CR>
 nnoremap <silent> <leader>- zfa{
 nnoremap <silent> <leader>= zo
 nnoremap <silent> <leader>md :MarkdownPreview<CR>
-
-nnoremap <silent> <leader>u :Lspsaga outline<CR>
-nnoremap <silent> <leader>tt :NvimTreeToggle<CR>
-nnoremap <silent> <leader>tu :lua require('undotree').toggle()<CR>
 "
 " f: find
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
@@ -49,14 +45,26 @@ nnoremap <silent> <leader>gh <C-w>h
 nnoremap <silent> <leader>gj <C-w>j
 
 " s: session
+" session load
 nnoremap <silent> <leader>sl :SessionManager load_session<CR>
+" session save
 nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
+" session delete
 nnoremap <silent> <leader>sd :SessionManager delete_session<CR>
 
-" w: window
+" d: display
 nnoremap <silent> <up> :res +5<CR>
 nnoremap <silent> <down> :res -5<CR>
 nnoremap <silent> <left> :vertical resize-5<CR>
 nnoremap <silent> <right> :vertical resize+5<CR>
-nnoremap <silent> <leader>wl :set splitright<CR>:vsplit<CR>
-nnoremap <silent> <leader>wj :set splitbelow<CR>:split<CR>
+" display window in l key direction
+nnoremap <silent> <leader>dl :set splitright<CR>:vsplit<CR>
+" display window in j key direction
+nnoremap <silent> <leader>dj :set splitbelow<CR>:split<CR>
+" display file outline
+nnoremap <silent> <leader>do :Lspsaga outline<CR>
+" display project tree
+nnoremap <silent> <leader>dp :NvimTreeToggle<CR>
+" display undo tree
+nnoremap <silent> <leader>du :lua require('undotree').toggle()<CR>
+
