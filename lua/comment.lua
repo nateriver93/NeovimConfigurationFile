@@ -1,6 +1,12 @@
 local config = {}
 function config.nvim_comment()
-	require('nvim_comment').setup()
+	require('nvim_comment').setup
+	{
+		-- Normal mode mapping left hand side
+		line_mapping = "<leader><leader>c",
+		-- Visual/Operator mapping left hand side
+		operator_mapping = "<leader>c",
+	}
 end
 
 function config.todo_comment()
