@@ -15,6 +15,7 @@ function config.alpha()
 	 dashboard.button( "<leader> f b", "  Folder Browser" , ":Telescope file_browser<CR>"),
 	 dashboard.button( "<leader> f f", "  Search Files" , ":Telescope find_files<CR>"),
 	 dashboard.button( "<leader> f o", "  Recent Opened Files" , ":Telescope oldfiles<CR>"),
+	 dashboard.button( "<leader> f m", "  Search keymaps" , ":Telescope keymaps<CR>"),
 
 	}
 	local handle = io.popen('fortune')

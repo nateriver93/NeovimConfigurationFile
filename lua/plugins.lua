@@ -59,12 +59,21 @@ return require('packer').startup(function(use)
 		'nvim-lua/plenary.nvim',
 		opt = false,
 	}
+	-- Workspace
 	use {
 		'Shatur/neovim-session-manager',
 		opt = true,
 		cmd = {"SessionManager"},
 		config = require('workspace').session_manager,
 	}
+
+	use {
+		'stevearc/dressing.nvim',
+		opt = true,
+		after = "telescope.nvim",
+		config = require('filesearch').dressing,
+	}
+
 	use {
 		'nvim-telescope/telescope.nvim',
 		tag = '0.1.0',
@@ -81,15 +90,15 @@ return require('packer').startup(function(use)
 	-- 	run = "make",
 	-- 	after = "telescope.nvim",
 	-- }
-	use {
-		'nvim-telescope/telescope-ui-select.nvim',
-		opt = true,
-		after = "telescope.nvim",
-	}
+	-- use {
+	-- 	'nvim-telescope/telescope-ui-select.nvim',
+	-- 	opt = true,
+	-- 	after = "telescope.nvim",
+	-- }
 	use {
 		'nvim-telescope/telescope-file-browser.nvim',
-		opt = true,
-		after = "telescope.nvim",
+		opt = false,
+		-- after = "telescope.nvim",
 	}
 
 	use {
@@ -102,8 +111,8 @@ return require('packer').startup(function(use)
 	use {
 		'gbprod/yanky.nvim',
 		requires = { "kkharji/sqlite.lua" },
-		opt = true,
-		event = "BufReadPost",
+		opt = false,
+		-- event = "BufReadPost",
 		config = require('filesearch').yanky,
 	}
 	-- lsp
@@ -223,6 +232,7 @@ return require('packer').startup(function(use)
 		cmd = { "DiffviewOpen", "DiffviewClose" },
 		config = require('merge').diffview,
 	}
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

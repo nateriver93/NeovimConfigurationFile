@@ -32,6 +32,7 @@ nnoremap <silent> <leader><leader>fs :Telescope grep_string search_dirs=%<CR>
 nnoremap <silent> <leader>fb :Telescope buffers<CR>
 nnoremap <silent> <leader>ft :TodoTelescope<CR>
 nnoremap <silent> <leader>fe :TroubleToggl<CR>
+nnoremap <silent> <leader>fm :Telescope keymaps<CR>
 "
 " g: go to
 nnoremap <silent> <leader>gg :HopChar2MW<CR>
