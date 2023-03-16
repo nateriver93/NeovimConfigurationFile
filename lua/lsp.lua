@@ -13,7 +13,9 @@ local config = {}
 
 	function config.mason_lspconfig()
 		require("mason-lspconfig").setup({
-			ensure_installed = { "sumneko_lua", "clangd", "vimls" }
+			ensure_installed = { "lua_ls", "clangd", "vimls" },
+
+			automatic_installation = true,
 		})
 	end
 
@@ -174,7 +176,7 @@ local config = {}
 		-- start server
 		local lspconfig = require("lspconfig")
 
-		lspconfig.sumneko_lua.setup {
+		lspconfig.lua_ls.setup {
 		  on_attach = on_attach,
 		  flags = lsp_flags,
 		  capabilities = capabilities,
