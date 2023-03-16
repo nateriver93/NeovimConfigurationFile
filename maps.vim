@@ -33,13 +33,15 @@ nnoremap <silent> <leader>fb :Telescope buffers<CR>
 nnoremap <silent> <leader>ft :TodoTelescope<CR>
 nnoremap <silent> <leader>fe :TroubleToggl<CR>
 nnoremap <silent> <leader>fm :Telescope keymaps<CR>
+nnoremap <silent> <leader>fj :Telescope lsp_definitions<CR>
+nnoremap <silent> <leader>fk :Telescope lsp_references<CR>
 "
 " g: go to
 nnoremap <silent> <leader>gg :HopChar2MW<CR>
 nnoremap <silent> <leader>ga A
 nnoremap <silent> <leader>gi I
 nnoremap <silent> <leader>ge G
-nnoremap <silent> <leader>gn :Glance references<CR>
+" nnoremap <silent> <leader>gn :Glance references<CR>
 nnoremap <silent> <leader>gl <C-w>l
 nnoremap <silent> <leader>gk <C-w>k
 nnoremap <silent> <leader>gh <C-w>h
