@@ -24,7 +24,7 @@ nnoremap <silent> <leader>md :MarkdownPreview<CR>
 " f: find
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
 nnoremap <silent> <leader>fp :Telescope file_browser<CR>
-nnoremap <silent> <leader>fo :Telescope oldfiles<CR>
+nnoremap <silent> <leader><leader>fo :Telescope oldfiles<CR>
 nnoremap <silent> <leader>fl :Telescope live_grep<CR>
 nnoremap <silent> <leader><leader>fl :Telescope live_grep search_dirs=%<CR>
 nnoremap <silent> <leader>fs :Telescope grep_string<CR>
@@ -35,6 +35,7 @@ nnoremap <silent> <leader>fe :TroubleToggl<CR>
 nnoremap <silent> <leader>fm :Telescope keymaps<CR>
 nnoremap <silent> <leader>fj :Telescope lsp_definitions<CR>
 nnoremap <silent> <leader>fk :Telescope lsp_references<CR>
+nnoremap <silent> <leader>fo :Telescope aerial<CR>
 "
 " g: go to
 nnoremap <silent> <leader>gg :HopChar2MW<CR>
@@ -65,7 +66,7 @@ nnoremap <silent> <leader>dl :set splitright<CR>:vsplit<CR>
 " display window in j key direction
 nnoremap <silent> <leader>dj :set splitbelow<CR>:split<CR>
 " display file outline
-nnoremap <silent> <leader>do :Lspsaga outline<CR>
+nnoremap <silent> <leader>do :AerialToggle<CR>
 " display project tree
 nnoremap <silent> <leader>dp :NvimTreeToggle<CR>
 " display undo tree

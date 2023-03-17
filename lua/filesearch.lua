@@ -108,6 +108,15 @@ function config.telescope()
 			--   case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
 			-- 								   -- the default case_mode is "smart_case"
 			-- },
+
+			aerial = {
+				-- Display symbols as <root>.<parent>.<symbol>
+				show_nesting = {
+					['_'] = false, -- This key will be the default
+					json = true,   -- You can set the option for specific filetypes
+					yaml = true,
+				}
+			},
 		}
 	}
 	--
@@ -115,6 +124,7 @@ function config.telescope()
 	require("telescope").load_extension "file_browser"
 	require("telescope").load_extension("yank_history")
 	-- require('telescope').load_extension("fzf")
+	require('telescope').load_extension('aerial')
 end
 
 function config.trouble()

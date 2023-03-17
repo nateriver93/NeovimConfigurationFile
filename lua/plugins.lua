@@ -118,8 +118,8 @@ return require('packer').startup(function(use)
 	-- lsp
 	use {
 		"neovim/nvim-lspconfig",
-		opt = true,
-		event = "BufReadPre",
+		opt = false,
+		-- event = "BufReadPre",
 		config = require('lsp').lspconfig,
 	}
 	use {
@@ -132,14 +132,15 @@ return require('packer').startup(function(use)
 		opt = false,
 		config = require('lsp').mason_lspconfig,
 	}
-	use {
-		"glepnir/lspsaga.nvim",
-		branch = "main",
-		opt = true,
-		event = "LspAttach",
-		cmd = "Lspsaga",
-		config = require('lsp').lspsaga,
-	}
+	-- use {
+	-- 	"glepnir/lspsaga.nvim",
+	-- 	branch = "main",
+	-- 	opt = true,
+	-- 	event = "LspAttach",
+	-- 	cmd = "Lspsaga",
+	-- 	config = require('lsp').lspsaga,
+	-- }
+	--
 	-- use {
 	-- 	"dnlhc/glance.nvim",
 	-- 	opt = true,
@@ -147,6 +148,13 @@ return require('packer').startup(function(use)
 	-- 	cmd = "Glance",
 	-- 	config = require('lsp').glance,
 	-- }
+	--
+	use {
+		"stevearc/aerial.nvim",
+		opt = false,
+		-- event = "LspAttach",
+		config = require('lsp').aerial,
+	}
 	-- auto complete
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-buffer'
@@ -214,7 +222,6 @@ return require('packer').startup(function(use)
 		config = require('easymotion').hop,
 	}
 	-- UndoTree
-	-- TODO: just used to test this plugin
 	use {
 		"jiaoshijie/undotree",
 		opt = true,

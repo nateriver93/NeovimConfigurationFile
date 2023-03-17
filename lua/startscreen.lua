@@ -12,10 +12,11 @@ function config.alpha()
 	}
 	dashboard.section.buttons.val = {
 	 dashboard.button( "<leader> s l", "  Load Session" , ":SessionManager load_session<CR>"),
-	 dashboard.button( "<leader> f b", "  Folder Browser" , ":Telescope file_browser<CR>"),
+	 dashboard.button( "<leader> f p", "  Folder Browser" , ":Telescope file_browser<CR>"),
 	 dashboard.button( "<leader> f f", "  Search Files" , ":Telescope find_files<CR>"),
-	 dashboard.button( "<leader> f o", "  Recent Opened Files" , ":Telescope oldfiles<CR>"),
+	 dashboard.button( "<leader> f o", "  Search Function outline" , ":Telescope aerial<CR>"),
 	 dashboard.button( "<leader> f m", "  Search keymaps" , ":Telescope keymaps<CR>"),
+	 dashboard.button( "<leader> f t", "  Search Todo tree" , ":TodoTelescope<CR>"),
 
 	}
 	local handle = io.popen('fortune')
