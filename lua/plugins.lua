@@ -240,7 +240,11 @@ return require('packer').startup(function(use)
 		config = require('merge').diffview,
 	}
 
-  -- Automatically set up your configuration after cloning packer.nvim
+	use {
+		'kylechui/nvim-surround',
+		config = require('edit').nvim_surround,
+	}
+	-- Automatically set up your configuration ([after]) cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
     require('packer').sync()
