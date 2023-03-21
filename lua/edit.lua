@@ -14,9 +14,9 @@ function config.nvim_surround()
 			["b"] = "}",
 			["s"] = "]",
 			["q"] = { '"', "'", "`" },
-			["A"] = { "}", "]", ")", ">", '"', "'", "`" },
+			["o"] = { "}", "]", ")", ">", '"', "'", "`" },
 		},
 	}
-	-- Test the nvim-surround (plugin)
+	-- ((Test) the nvim-surround) (plugin)
 end
 return config
