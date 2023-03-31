@@ -244,6 +244,14 @@ return require('packer').startup(function(use)
 		'kylechui/nvim-surround',
 		config = require('edit').nvim_surround,
 	}
+
+	use {
+		"tversteeg/registers.nvim",
+		config = function()
+			require("registers").setup()
+		end,
+	}
+
 	-- Automatically set up your configuration ([after]) cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

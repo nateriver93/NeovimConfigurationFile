@@ -72,3 +72,6 @@ nnoremap <silent> <leader>dp :NvimTreeToggle<CR>
 " display undo tree
 nnoremap <silent> <leader>du :lua require('undotree').toggle()<CR>
 
+" r: Register
+nnoremap <silent> <leader><leader>r :Registers<CR>
+
