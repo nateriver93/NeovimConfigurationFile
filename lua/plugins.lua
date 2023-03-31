@@ -84,12 +84,12 @@ return require('packer').startup(function(use)
 		config = require('filesearch').telescope,
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
-	-- use {
-	-- 	'nvim-telescope/telescope-fzf-native.nvim',
-	-- 	opt = true,
-	-- 	run = "make",
-	-- 	after = "telescope.nvim",
-	-- }
+	use {
+		'nvim-telescope/telescope-fzf-native.nvim',
+		opt = false,
+		run = "mingw32-make",
+		-- after = "telescope.nvim",
+	}
 	-- use {
 	-- 	'nvim-telescope/telescope-ui-select.nvim',
 	-- 	opt = true,
