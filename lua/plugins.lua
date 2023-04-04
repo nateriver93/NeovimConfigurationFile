@@ -247,9 +247,7 @@ return require('packer').startup(function(use)
 
 	use {
 		"tversteeg/registers.nvim",
-		config = function()
-			require("registers").setup()
-		end,
+		config = require('reg').registers_nvim,
 	}
 
 	-- Automatically set up your configuration ([after]) cloning packer.nvim
