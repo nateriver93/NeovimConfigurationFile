@@ -247,6 +247,8 @@ return require('packer').startup(function(use)
 
 	use {
 		"tversteeg/registers.nvim",
+		opt = true,
+		cmd = "Registers",
 		config = require('reg').registers_nvim,
 	}
 
