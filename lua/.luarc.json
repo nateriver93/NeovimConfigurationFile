@@ -19,5 +19,6 @@
         "C:\\ProgramData\\scoop\\apps\\neovim\\current\\lib\\nvim",
         "C:\\ProgramData\\scoop\\apps\\neovim\\current\\bin\\..\\share\\nvim-qt\\runtime",
         "${3rd}/luassert/library"
-    ]
+    ],
+    "workspace.checkThirdParty": false
 }
