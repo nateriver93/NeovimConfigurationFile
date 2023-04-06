@@ -34,7 +34,8 @@ function config.nvim_tree()
         mappings = {
           custom_only = false,
           list = {
-            -- user mappings go here
+				-- user mappings go here
+			  { key = { "<ESC>" }, action = "close", mode = "n" },
           },
         },
         float = {

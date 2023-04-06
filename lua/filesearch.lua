@@ -37,7 +37,10 @@ function config.telescope()
 
 			mappings = {
 			  i = {
-				-- ["o"] = require('telescope.actions').select_default,
+			  },
+
+			  n = {
+				["o"] = require('telescope.actions').select_default,
 			  },
 		  }
 		},
