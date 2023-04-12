@@ -33,7 +33,7 @@ end
 function config.telescope()
 	require('telescope').setup{
 		defaults = {
-			file_ignore_patterns = {"%.map", "%.obj", "%.o", "%.pbi", "%.html", "%.7z", "%.zip", "%.sln", "%.eww", "%.ewp", "%.command", "%.vcproj", "%.dep", "%.s", "%.lst"},
+			file_ignore_patterns = {"%.map", "%.obj", "%.o", "%.pbi", "%.html", "%.7z", "%.zip", "%.sln", "%.eww", "%.ewp", "%.command", "%.vcproj", "%.dep", "%.s", "%.lst", "%.pbw"},
 
 			mappings = {
 			  i = {

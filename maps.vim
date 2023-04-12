@@ -29,6 +29,8 @@ nnoremap <silent> <leader>fl :Telescope live_grep<CR>
 nnoremap <silent> <leader><leader>fl :Telescope live_grep search_dirs=%<CR>
 nnoremap <silent> <leader>fs :Telescope grep_string<CR>
 nnoremap <silent> <leader><leader>fs :Telescope grep_string search_dirs=%<CR>
+nnoremap <silent> <leader>fw :lua require('telescope.builtin').grep_string({word_match = "-w"})<CR>
+nnoremap <silent> <leader><leader>fw :lua require('telescope.builtin').grep_string({search_dirs={"%"},word_match = "-w"})<CR>
 nnoremap <silent> <leader>fb :Telescope buffers<CR>
 nnoremap <silent> <leader>ft :TodoTelescope<CR>
 nnoremap <silent> <leader>fe :TroubleToggl<CR>
