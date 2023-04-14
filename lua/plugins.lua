@@ -132,22 +132,6 @@ return require('packer').startup(function(use)
 		opt = false,
 		config = require('lsp').mason_lspconfig,
 	}
-	-- use {
-	-- 	"glepnir/lspsaga.nvim",
-	-- 	branch = "main",
-	-- 	opt = true,
-	-- 	event = "LspAttach",
-	-- 	cmd = "Lspsaga",
-	-- 	config = require('lsp').lspsaga,
-	-- }
-	--
-	-- use {
-	-- 	"dnlhc/glance.nvim",
-	-- 	opt = true,
-	-- 	event = "LspAttach",
-	-- 	cmd = "Glance",
-	-- 	config = require('lsp').glance,
-	-- }
 	--
 	use {
 		"stevearc/aerial.nvim",
@@ -156,15 +140,36 @@ return require('packer').startup(function(use)
 		config = require('lsp').aerial,
 	}
 	-- auto complete
-	use 'hrsh7th/cmp-nvim-lsp'
-	use 'hrsh7th/cmp-buffer'
-	use 'hrsh7th/cmp-path'
-	use 'hrsh7th/cmp-cmdline'
-	use 'hrsh7th/nvim-cmp'
-	use 'hrsh7th/cmp-vsnip'
-	use 'hrsh7th/vim-vsnip'
+	use {
+		'hrsh7th/nvim-cmp',
+		requires = {
+			'hrsh7th/cmp-nvim-lsp',
+			'hrsh7th/cmp-buffer',
+			'hrsh7th/cmp-path',
+			'hrsh7th/cmp-cmdline',
+			'hrsh7th/cmp-calc',
+			'hrsh7th/cmp-emoji',
+			-- 可以根据需要添加其他 cmp 插件
+		},
+		opt = false;
+		config = require('lsp').nvim_cmp,
+	}
+
+	use {
+		'hrsh7th/cmp-vsnip',
+		requires = {
+			'hrsh7th/vim-vsnip',
+		}
+	}
+
 	use 'rafamadriz/friendly-snippets'
-	use 'onsails/lspkind-nvim'
+
+	use {
+		'onsails/lspkind-nvim',
+		opt = false,
+		-- event = "LspAttach",
+		config = require('lsp').lspkind_nvim,
+	}
 
 	-- StartScreen
 	use {
