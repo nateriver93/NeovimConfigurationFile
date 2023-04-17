@@ -38,12 +38,12 @@ local config = {}
 			},
 
 			mapping = {
-				['<C-p>'] = cmp.mapping.select_prev_item(),
-				['<C-n>'] = cmp.mapping.select_next_item(),
-				['<C-d>'] = cmp.mapping.scroll_docs(-4),
-				['<C-u>'] = cmp.mapping.scroll_docs(4),
-				['<C-Space>'] = cmp.mapping.complete(),
-				['<C-e>'] = cmp.mapping.close(),
+				['<C-k>'] = cmp.mapping.select_prev_item(),
+				['<C-j>'] = cmp.mapping.select_next_item(),
+				-- ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+				-- ['<C-u>'] = cmp.mapping.scroll_docs(4),
+				-- ['<C-Space>'] = cmp.mapping.complete(),
+				-- ['<C-e>'] = cmp.mapping.close(),
 				['<C-o>'] = cmp.mapping.confirm({
 					behavior = cmp.ConfirmBehavior.Replace,
 					select = true,
@@ -60,12 +60,18 @@ local config = {}
 				{ name = 'vsnip' },
 				-- 添加其他 cmp 插件
 			},
-
+			--
+			-- 使用lspkind-nvim显示类型图标
 			formatting = {
-				format = function(entry, vim_item)
-					vim_item.kind = lspkind.presets.default[vim_item.kind]
-					return vim_item
-				end
+				format = lspkind.cmp_format({
+					with_text = true, -- do not show text alongside icons
+					maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
+					before = function (entry, vim_item)
+						-- Source 显示提示来源
+						vim_item.menu = "["..string.upper(entry.source.name).."]"
+						return vim_item
+					end
+				})
 			},
 
 			event = {
@@ -73,9 +79,25 @@ local config = {}
 					if item ~= nil and item.documentation ~= nil then
 						vim.lsp.util.open_floating_preview(item.documentation)
 					end
-				end,
+				end
 			},
 		})
+
+		 -- Use buffer source for `/`.
+		 cmp.setup.cmdline('/', {
+		   sources = {
+			{ name = 'buffer' }
+		   }
+		 })
+
+		 -- Use cmdline & path source for ':'.
+		 cmp.setup.cmdline(':', {
+		   sources = cmp.config.sources({
+			{ name = 'path' }
+		   }, {
+			  { name = 'cmdline' }
+			})
+		 })
 	end
 
 	function config.lspconfig()
@@ -84,7 +106,13 @@ local config = {}
 
 		local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+		local function on_attach_callback(client, bufnr)
+			require'folding'.on_attach()  -- 启用 folding-nvim
+			-- ... 其他 on_attach 函数设置
+		end
+
 		lspconfig.lua_ls.setup {
+			on_attach = on_attach_callback,
 			capabilities = capabilities,
 			settings = {
 					Lua = {
@@ -105,10 +133,12 @@ local config = {}
 		}
 
 		lspconfig.clangd.setup{
+			on_attach = on_attach_callback,
 			capabilities = capabilities,
 		}
 
 		lspconfig.vimls.setup{
+			on_attach = on_attach_callback,
 			capabilities = capabilities,
 		}
 	end

@@ -15,11 +15,13 @@ return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	-- theme
 	use 'kyazdani42/nvim-web-devicons'
+
 	-- use {
 	-- 	'projekt0n/github-nvim-theme',
 	-- 	opt = false,
 	-- 	config = require('themeconfig').github_theme,
 	-- }
+	--
 	use {
 		'EdenEast/nightfox.nvim',
 		opt = false,
@@ -122,6 +124,7 @@ return require('packer').startup(function(use)
 		-- event = "BufReadPre",
 		config = require('lsp').lspconfig,
 	}
+
 	use {
 		"williamboman/mason.nvim",
 		opt = false,
@@ -169,6 +172,11 @@ return require('packer').startup(function(use)
 		opt = false,
 		-- event = "LspAttach",
 		config = require('lsp').lspkind_nvim,
+	}
+
+	use {
+		'pierreglaser/folding-nvim',
+		opt = false,
 	}
 
 	-- StartScreen

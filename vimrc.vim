@@ -26,7 +26,8 @@ set pastetoggle=<F2>
 set hlsearch
 
 " 折叠方式
-"set foldmethod=indent
+set foldlevelstart=99
+set foldmethod=manual
 
 " 启动时不显示援助乌干达儿童的提示
 set shortmess=atI

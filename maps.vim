@@ -17,9 +17,9 @@ nnoremap <silent> <leader>o O
 nnoremap <silent> <leader>x "0diwh"*p
 nnoremap <silent> <leader>h gd<C-o>
 nnoremap <silent> <leader><leader>h :noh<CR>
-nnoremap <silent> <leader>- zfa{
-nnoremap <silent> <leader>= zo
 nnoremap <silent> <leader>md :MarkdownPreview<CR>
+nnoremap <silent> <leader>z za
+
 "
 " f: find
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
