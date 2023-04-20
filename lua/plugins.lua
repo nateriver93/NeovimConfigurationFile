@@ -62,12 +62,20 @@ return require('packer').startup(function(use)
 		opt = false,
 	}
 	-- Workspace
+	----------------------------------------------------------------------------------------------------
+	-- use {
+	-- 	'Shatur/neovim-session-manager',
+	-- 	opt = true,
+	-- 	cmd = {"SessionManager"},
+	-- 	config = require('workspace').session_manager,
+	-- }
+
 	use {
-		'Shatur/neovim-session-manager',
-		opt = true,
-		cmd = {"SessionManager"},
-		config = require('workspace').session_manager,
+		'ahmedkhalf/project.nvim',
+		opt = false,
+		config = require('workspace').project_nvim,
 	}
+	----------------------------------------------------------------------------------------------------
 
 	use {
 		'stevearc/dressing.nvim',
@@ -82,7 +90,7 @@ return require('packer').startup(function(use)
 		opt = true,
 		module = "telescope",
 		cmd = {"Telescope"},
-		after = "neovim-session-manager",
+		-- after = "neovim-session-manager",
 		config = require('filesearch').telescope,
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
@@ -104,12 +112,19 @@ return require('packer').startup(function(use)
 	}
 
 	use {
+		'nvim-telescope/telescope-project.nvim',
+		opt = false,
+		-- after = "telescope.nvim",
+	}
+
+	use {
 		"folke/trouble.nvim",
 		requires = "kyazdani42/nvim-web-devicons",
 		opt = true,
 		cmd = { "Trouble", "TroubleToggle", "TroubleRefresh" },
 		config = require('filesearch').trouble,
 	}
+
 	use {
 		'gbprod/yanky.nvim',
 		requires = { "kkharji/sqlite.lua" },

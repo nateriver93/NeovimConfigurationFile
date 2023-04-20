@@ -10,6 +10,14 @@ function config.nvim_treesitter()
 			enable = true,
 			additional_vim_regex_highlighting = false, -- disable standard vim highlighting
 		},
+		indent = {
+			enable = true, -- 启用基于树状结构的缩进
+		},
+		-- 启用基于树状结构的折叠
+		fold = {
+			enable = true,
+			disable = {}
+		},
 	}
 end
 

@@ -4,3 +4,4 @@ runtime ./vimrc.vim
 lua require('plugins')
 " 按键映射
 runtime ./maps.vim
+

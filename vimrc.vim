@@ -26,7 +26,9 @@ set pastetoggle=<F2>
 set hlsearch
 
 " 折叠方式
-set foldmethod=syntax
+set foldmethod=expr
+set foldexpr=nvim_treesitter#foldexpr()
+set nofoldenable
 
 " 启动时不显示援助乌干达儿童的提示
 set shortmess=atI
@@ -85,8 +87,3 @@ set mouse=c
 " colorscheme github_dark_default
 colorscheme nightfox
 cd ~
-
-" Improve Neovim startup time by disabling python and host check
-" let g:python3_host_skip_check = 1
-" let g:loaded_python3_provider = 1
-" let g:python3_host_prog = '$HOME/scoop/apps/python/current/python.exe'

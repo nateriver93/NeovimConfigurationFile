@@ -20,7 +20,6 @@ nnoremap <silent> <leader><leader>h :noh<CR>
 nnoremap <silent> <leader>md :MarkdownPreview<CR>
 nnoremap <silent> <leader>z za
 
-"
 " f: find
 nnoremap <silent> <leader>ff :Telescope find_files<CR>
 nnoremap <silent> <leader>fp :Telescope file_browser<CR>
@@ -51,12 +50,15 @@ nnoremap <silent> <leader>gh <C-w>h
 nnoremap <silent> <leader>gj <C-w>j
 
 " s: session
+nnoremap <silent> <leader>sl :Telescope projects<CR>
+"
+" configure for plugin: neovim-session-manager
 " session load
-nnoremap <silent> <leader>sl :SessionManager load_session<CR>
+" nnoremap <silent> <leader>sl :SessionManager load_session<CR>
 " session save
-nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
+" nnoremap <silent> <leader>ss :SessionManager save_current_session<CR>
 " session delete
-nnoremap <silent> <leader>sd :SessionManager delete_session<CR>
+" nnoremap <silent> <leader>sd :SessionManager delete_session<CR>
 
 " d: display
 nnoremap <silent> <up> :res +5<CR>
