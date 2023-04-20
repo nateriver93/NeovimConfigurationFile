@@ -107,8 +107,7 @@ local config = {}
 		local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 		local function on_attach_callback(client, bufnr)
-			require'folding'.on_attach()  -- 启用 folding-nvim
-			-- ... 其他 on_attach 函数设置
+
 		end
 
 		lspconfig.lua_ls.setup {

@@ -130,9 +130,11 @@ return require('packer').startup(function(use)
 		opt = false,
 		config = require('lsp').mason,
 	}
+
 	use {
 		"williamboman/mason-lspconfig.nvim",
-		opt = false,
+		opt = true,
+		after = 'mason.nvim',
 		config = require('lsp').mason_lspconfig,
 	}
 	--
@@ -172,11 +174,6 @@ return require('packer').startup(function(use)
 		opt = false,
 		-- event = "LspAttach",
 		config = require('lsp').lspkind_nvim,
-	}
-
-	use {
-		'pierreglaser/folding-nvim',
-		opt = false,
 	}
 
 	-- StartScreen
