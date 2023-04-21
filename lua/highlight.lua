@@ -21,4 +21,11 @@ function config.nvim_treesitter()
 	}
 end
 
+function config.vim_illuminate()
+
+	require('illuminate').freeze_buf()
+
+	require('illuminate').unfreeze_buf()
+end
+
 return config

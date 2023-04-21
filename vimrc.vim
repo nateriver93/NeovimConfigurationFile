@@ -87,3 +87,6 @@ set mouse=c
 " colorscheme github_dark_default
 colorscheme nightfox
 cd ~
+
+" vim-illuminate configuration
+hi illuminatedWord guifg=#ff0000 guibg=#00ff00

@@ -14,6 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	-- theme
+	----------------------------------------------------------------------------------------------------
 	use 'kyazdani42/nvim-web-devicons'
 
 	-- use {
@@ -27,19 +28,21 @@ return require('packer').startup(function(use)
 		opt = false,
 		config = require('themeconfig').nightfox,
 	}
+
 	use 'joshdick/onedark.vim'
-	use {
-	  'nvim-lualine/lualine.nvim',
-	  requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-	  opt = false,
-	  config = require('statusline').lualine,
-	}
 
 	use {
 		"lukas-reineke/indent-blankline.nvim",
 		opt = true,
 		event = "BufReadPost",
 		config = require('themeconfig').indent_blankline,
+	}
+	----------------------------------------------------------------------------------------------------
+	use {
+	  'nvim-lualine/lualine.nvim',
+	  requires = { 'kyazdani42/nvim-web-devicons', opt = true },
+	  opt = false,
+	  config = require('statusline').lualine,
 	}
 
 	use {
@@ -56,6 +59,13 @@ return require('packer').startup(function(use)
 		event = "BufReadPost",
 		config = require('highlight').nvim_treesitter,
 	}
+
+	use {
+		'RRethy/vim-illuminate',
+		opt = false,
+		config = require('highlight').vim_illuminate,
+	}
+
 	-- search files
 	use {
 		'nvim-lua/plenary.nvim',

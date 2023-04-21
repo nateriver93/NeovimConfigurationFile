@@ -15,8 +15,10 @@ nnoremap <silent> <leader><leader>q :wa<CR>:qa<CR>
 nnoremap <silent> <leader>r <C-r>
 nnoremap <silent> <leader>o O
 nnoremap <silent> <leader>x "0diwh"*p
-nnoremap <silent> <leader>h gd<C-o>
-nnoremap <silent> <leader><leader>h :noh<CR>
+" nnoremap <silent> <leader>h gd<C-o>
+" nnoremap <silent> <leader><leader>h :noh<CR>
+nnoremap <silent> <leader>h :lua require("illuminate").freeze_buf()<CR>
+nnoremap <silent> <leader><leader>h :lua require("illuminate").unfreeze_buf()<CR>
 nnoremap <silent> <leader>md :MarkdownPreview<CR>
 nnoremap <silent> <leader>z za
 
