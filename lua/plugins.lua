@@ -60,11 +60,11 @@ return require('packer').startup(function(use)
 		config = require('highlight').nvim_treesitter,
 	}
 
-	use {
-		'RRethy/vim-illuminate',
-		opt = false,
-		config = require('highlight').vim_illuminate,
-	}
+	-- use {
+	-- 	'RRethy/vim-illuminate',
+	-- 	opt = false,
+	-- 	config = require('highlight').vim_illuminate,
+	-- }
 
 	-- search files
 	use {

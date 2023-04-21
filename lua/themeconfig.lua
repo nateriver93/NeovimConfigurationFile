@@ -22,15 +22,18 @@ function config.nightfox()
 		  types = "NONE",
 		  variables = "NONE",
 		},
+
 		inverse = {             -- Inverse highlight for different types
 		  match_paren = false,
 		  visual = false,
 		  search = false,
 		},
+
 		modules = {             -- List of various plugins and additional options
 		  -- ...
 		},
 	  },
+
 	  palettes = {},
 	  specs = {},
 	  groups = {},
