@@ -73,18 +73,18 @@ return require('packer').startup(function(use)
 	}
 	-- Workspace
 	----------------------------------------------------------------------------------------------------
-	-- use {
-	-- 	'Shatur/neovim-session-manager',
-	-- 	opt = true,
-	-- 	cmd = {"SessionManager"},
-	-- 	config = require('workspace').session_manager,
-	-- }
-
 	use {
-		'ahmedkhalf/project.nvim',
-		opt = false,
-		config = require('workspace').project_nvim,
+		'Shatur/neovim-session-manager',
+		opt = true,
+		after = "dressing.nvim",
+		config = require('workspace').session_manager,
 	}
+
+	-- use {
+	-- 	'ahmedkhalf/project.nvim',
+	-- 	opt = false,
+	-- 	config = require('workspace').project_nvim,
+	-- }
 	----------------------------------------------------------------------------------------------------
 
 	use {
@@ -98,34 +98,36 @@ return require('packer').startup(function(use)
 		'nvim-telescope/telescope.nvim',
 		tag = '0.1.0',
 		opt = true,
-		module = "telescope",
-		cmd = {"Telescope"},
-		-- after = "neovim-session-manager",
+		-- module = "telescope",
+		cmd = {"Telescope", "SessionManager"},
 		config = require('filesearch').telescope,
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+
 	use {
 		'nvim-telescope/telescope-fzf-native.nvim',
 		opt = false,
 		run = "mingw32-make",
 		-- after = "telescope.nvim",
 	}
+	
 	-- use {
 	-- 	'nvim-telescope/telescope-ui-select.nvim',
 	-- 	opt = true,
 	-- 	after = "telescope.nvim",
 	-- }
+
 	use {
 		'nvim-telescope/telescope-file-browser.nvim',
 		opt = false,
 		-- after = "telescope.nvim",
 	}
 
-	use {
-		'nvim-telescope/telescope-project.nvim',
-		opt = false,
-		-- after = "telescope.nvim",
-	}
+	-- use {
+	-- 	'nvim-telescope/telescope-project.nvim',
+	-- 	opt = false,
+	-- 	-- after = "telescope.nvim",
+	-- }
 
 	use {
 		"folke/trouble.nvim",

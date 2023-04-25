@@ -134,6 +134,13 @@ local config = {}
 		lspconfig.clangd.setup{
 			on_attach = on_attach_callback,
 			capabilities = capabilities,
+			cmd = {
+				"clangd",
+				"--background-index",
+				"--suggest-missing-includes",
+				"--clang-tidy",
+				"--header-insertion=iwyu",
+			},
 		}
 
 		lspconfig.vimls.setup{

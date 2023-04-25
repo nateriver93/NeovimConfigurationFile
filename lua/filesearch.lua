@@ -127,7 +127,7 @@ function config.telescope()
 	require("telescope").load_extension("yank_history")
 	require('telescope').load_extension("fzf")
 	require('telescope').load_extension('aerial')
-	require('telescope').load_extension('projects')
+	-- require('telescope').load_extension('projects')
 end
 
 function config.trouble()

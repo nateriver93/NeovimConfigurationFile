@@ -11,8 +11,8 @@ function config.alpha()
 		[[ ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
 	}
 	dashboard.section.buttons.val = {
-	 -- dashboard.button( "<leader> s l", "  Load Session" , ":SessionManager load_session<CR>"),
-	 dashboard.button( "<leader> s l", "  Load Session" , ":Telescope projects<CR>"),
+	 dashboard.button( "<leader> s l", "  Load Session" , ":SessionManager load_session<CR>"),
+	 -- dashboard.button( "<leader> s l", "  Load Session" , ":Telescope projects<CR>"),
 	 dashboard.button( "<leader> f p", "  Folder Browser" , ":Telescope file_browser<CR>"),
 	 dashboard.button( "<leader> f f", "  Search Files" , ":Telescope find_files<CR>"),
 	 dashboard.button( "<leader> f o", "  Search Function outline" , ":Telescope aerial<CR>"),
