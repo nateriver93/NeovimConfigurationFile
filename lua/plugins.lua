@@ -110,7 +110,7 @@ return require('packer').startup(function(use)
 		run = "mingw32-make",
 		-- after = "telescope.nvim",
 	}
-	
+
 	-- use {
 	-- 	'nvim-telescope/telescope-ui-select.nvim',
 	-- 	opt = true,
@@ -219,7 +219,7 @@ return require('packer').startup(function(use)
 		ft = "markdown",
 		config = require('markdown').markdown_preview,
 	})
-	--
+
 	-- Speed up
 	use {
 		'dstein64/vim-startuptime',
@@ -232,6 +232,7 @@ return require('packer').startup(function(use)
 		 opt = false,
 		 config = require('speedup').impatient,
 	}
+
 	use 'nathom/filetype.nvim'
 
 	-- Comment

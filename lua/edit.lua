@@ -3,7 +3,9 @@ function config.nvim_surround()
 	require('nvim-surround').setup
 	{
 		keymaps = {
-			visual = "ss",
+			insert = "<A-s>",
+			normal = "sn",
+			visual = "sv",
 			delete = "sd",
 			change = "sc",
 		},
