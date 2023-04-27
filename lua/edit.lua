@@ -3,9 +3,7 @@ function config.nvim_surround()
 	require('nvim-surround').setup
 	{
 		keymaps = {
-			insert = "<A-s>",
-			normal = "sn",
-			visual = "sv",
+			visual = "ss",
 			delete = "sd",
 			change = "sc",
 		},
@@ -18,7 +16,7 @@ function config.nvim_surround()
 			["q"] = { '"', "'", "`" },
 			["o"] = { "}", "]", ")", ">", '"', "'", "`" },
 		},
+
 	}
-	-- ((Test) the nvim-surround) (plugin)
 end
 return config

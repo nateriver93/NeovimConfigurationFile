@@ -80,3 +80,10 @@ nnoremap <silent> <leader>du :lua require('undotree').toggle()<CR>
 
 " r: Register
 nnoremap <silent> <leader><leader>r :Registers<CR>
+
+nnoremap <silent> ssa a<><Esc>i
+nnoremap <silent> ssp a()<Esc>i
+nnoremap <silent> ssb a{}<Esc>i
+nnoremap <silent> sss a[]<Esc>i
+
+
