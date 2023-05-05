@@ -56,7 +56,6 @@ local config = {}
 				{ name = 'path' },
 				{ name = 'cmdline' },
 				{ name = 'calc' },
-				{ name = 'emoji' },
 				{ name = 'vsnip' },
 				-- 添加其他 cmp 插件
 			},

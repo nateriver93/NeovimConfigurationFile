@@ -42,10 +42,11 @@ return require('packer').startup(function(use)
 	}
 
 	use {
-	  'nvim-tree/nvim-tree.lua',
-	  requires = { 'kyazdani42/nvim-web-devicons' },
-	  tag = 'nightly', -- optional, updated every week. (see issue #1193)
-	  config = require('filetree').nvim_tree,
+		'nvim-tree/nvim-tree.lua',
+		cmd = 'NvimTreeToggle',
+		requires = { 'kyazdani42/nvim-web-devicons' },
+		tag = 'nightly', -- optional, updated every week. (see issue #1193)
+		config = require('filetree').nvim_tree,
 	}
 
 	use {
@@ -55,15 +56,10 @@ return require('packer').startup(function(use)
 		config = require('highlight').nvim_treesitter,
 	}
 
-	-- use {
-	-- 	'RRethy/vim-illuminate',
-	-- 	config = require('highlight').vim_illuminate,
-	-- }
-
-	-- search files
 	use {
 		'nvim-lua/plenary.nvim',
 	}
+	----------------------------------------------------------------------------------------------------
 	-- Workspace
 	----------------------------------------------------------------------------------------------------
 	use {
@@ -77,7 +73,8 @@ return require('packer').startup(function(use)
 	-- 	config = require('workspace').project_nvim,
 	-- }
 	----------------------------------------------------------------------------------------------------
-
+	-- search files
+	----------------------------------------------------------------------------------------------------
 	use {
 		'stevearc/dressing.nvim',
 		after = "telescope.nvim",
@@ -127,12 +124,37 @@ return require('packer').startup(function(use)
 		-- event = "BufReadPost",
 		config = require('filesearch').yanky,
 	}
-	-- lsp
-	--
+
+	----------------------------------------------------------------------------------------------------
+	--Lsp and auto complete
+	----------------------------------------------------------------------------------------------------
 	use {
-	  "neovim/nvim-lspconfig",
-	  event = "BufRead",
-	  config = require('lsp').lspconfig,
+		'onsails/lspkind-nvim',
+		event = 'BufRead',
+		config = require('lsp').lspkind_nvim,
+	}
+
+	use {
+		'hrsh7th/nvim-cmp',
+		after = 'lspkind-nvim',
+		requires = {
+			{'hrsh7th/cmp-vsnip', after = 'nvim-cmp'},
+			{'hrsh7th/vim-vsnip', after = 'nvim-cmp'},
+			{'rafamadriz/friendly-snippets', after = 'nvim-cmp'},
+			{'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp'},
+			{'hrsh7th/cmp-buffer', after = 'nvim-cmp'},
+			{'hrsh7th/cmp-path', after = 'nvim-cmp'},
+			{'hrsh7th/cmp-cmdline', after = 'nvim-cmp'},
+			{'hrsh7th/cmp-calc', after = 'nvim-cmp'},
+			-- 可以根据需要添加其他 cmp 插件
+		},
+		config = require('lsp').nvim_cmp,
+	}
+
+	use {
+		"neovim/nvim-lspconfig",
+		after = 'cmp-nvim-lsp',
+		config = require('lsp').lspconfig,
 	}
 
 	use {
@@ -152,53 +174,26 @@ return require('packer').startup(function(use)
 		"stevearc/aerial.nvim",
 		config = require('lsp').aerial,
 	}
-
-	-- auto complete
-	use {
-		'hrsh7th/nvim-cmp',
-		requires = {
-			'hrsh7th/cmp-nvim-lsp',
-			'hrsh7th/cmp-buffer',
-			'hrsh7th/cmp-path',
-			'hrsh7th/cmp-cmdline',
-			'hrsh7th/cmp-calc',
-			'hrsh7th/cmp-emoji',
-			-- 可以根据需要添加其他 cmp 插件
-		},
-		config = require('lsp').nvim_cmp,
-	}
-
-	use {
-		'hrsh7th/cmp-vsnip',
-		requires = {
-			'hrsh7th/vim-vsnip',
-		}
-	}
-
-	use 'rafamadriz/friendly-snippets'
-
-	use {
-		'onsails/lspkind-nvim',
-		-- event = "LspAttach",
-		config = require('lsp').lspkind_nvim,
-	}
-
+	----------------------------------------------------------------------------------------------------
 	-- StartScreen
+	----------------------------------------------------------------------------------------------------
 	use {
 		'goolord/alpha-nvim',
 		requires = { 'kyazdani42/nvim-web-devicons' },
 		config = require('startscreen').alpha,
 	}
-	--
+	----------------------------------------------------------------------------------------------------
 	-- Markdown
+	----------------------------------------------------------------------------------------------------
 	use({
 		"iamcco/markdown-preview.nvim",
 		run = function() vim.fn["mkdp#util#install"]() end,
 		ft = "markdown",
 		config = require('markdown').markdown_preview,
 	})
-
+	----------------------------------------------------------------------------------------------------
 	-- Speed up
+	----------------------------------------------------------------------------------------------------
 	use {
 		'dstein64/vim-startuptime',
 		cmd = "StartupTime",
@@ -210,8 +205,9 @@ return require('packer').startup(function(use)
 	}
 
 	use 'nathom/filetype.nvim'
-
+	----------------------------------------------------------------------------------------------------
 	-- Comment
+	----------------------------------------------------------------------------------------------------
 	use {
 		'terrortylor/nvim-comment',
 		event = "BufReadPost",
@@ -224,8 +220,9 @@ return require('packer').startup(function(use)
 		cmd = "TodoTelescope",
 		config = require('comment').todo_comment,
 	}
-
+	----------------------------------------------------------------------------------------------------
 	-- Easymotion
+	----------------------------------------------------------------------------------------------------
 	use {
 		'phaazon/hop.nvim',
 		branch = 'v2', -- optional but strongly recommended
