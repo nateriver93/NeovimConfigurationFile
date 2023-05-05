@@ -145,25 +145,25 @@ return require('packer').startup(function(use)
 		config = require('filesearch').yanky,
 	}
 	-- lsp
+	--
 	use {
-		"neovim/nvim-lspconfig",
-		opt = false,
-		-- event = "BufReadPre",
-		config = require('lsp').lspconfig,
+	  "neovim/nvim-lspconfig",
+	  event = "BufRead",
+	  config = require('lsp').lspconfig,
 	}
 
 	use {
-		"williamboman/mason.nvim",
-		opt = false,
-		config = require('lsp').mason,
+	  "williamboman/mason.nvim",
+	  event = "BufRead",
+	  config = require('lsp').mason,
 	}
 
 	use {
-		"williamboman/mason-lspconfig.nvim",
-		opt = true,
-		after = 'mason.nvim',
-		config = require('lsp').mason_lspconfig,
+	  "williamboman/mason-lspconfig.nvim",
+	  after = {'mason.nvim', 'nvim-lspconfig'},
+	  config = require('lsp').mason_lspconfig,
 	}
+
 	--
 	use {
 		"stevearc/aerial.nvim",
