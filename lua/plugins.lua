@@ -229,7 +229,9 @@ return require('packer').startup(function(use)
 		event = "BufReadPost",
 		config = require('easymotion').hop,
 	}
+	----------------------------------------------------------------------------------------------------
 	-- UndoTree
+	----------------------------------------------------------------------------------------------------
 	use {
 		"jiaoshijie/undotree",
 		module = "undotree",
@@ -248,6 +250,7 @@ return require('packer').startup(function(use)
 
 	use {
 		'kylechui/nvim-surround',
+		event = "BufReadPost",
 		config = require('edit').nvim_surround,
 	}
 
