@@ -1,0 +1,10 @@
+{
+  "Function to config plugin": {
+    "prefix": "config",
+    "body": [
+      "function config.${1:name}()",
+      "end"
+    ],
+    "description": "Function to config plugin"
+  }
+}

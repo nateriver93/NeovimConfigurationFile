@@ -461,4 +461,5 @@ local config = {}
 		  },
 		})
 	end
+
 return config

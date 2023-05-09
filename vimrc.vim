@@ -92,3 +92,4 @@ highlight Search guifg=#172C3C guibg=#CDB380
 
 cd ~
 
+let g:vsnip_snippet_dir = expand('~/AppData/Local/nvim/snippets')
