@@ -86,4 +86,3 @@ nnoremap <silent> ssp a()<Esc>i
 nnoremap <silent> ssb a{}<Esc>i
 nnoremap <silent> sss a[]<Esc>i
 
-

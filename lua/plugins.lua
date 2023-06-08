@@ -172,6 +172,7 @@ return require('packer').startup(function(use)
 	--
 	use {
 		"stevearc/aerial.nvim",
+		requires = {'onsails/lspkind-nvim'},
 		config = require('lsp').aerial,
 	}
 	----------------------------------------------------------------------------------------------------
