@@ -21,7 +21,63 @@ local config = {}
 	end
 
 	function config.lspkind_nvim()
-		require('lspkind').init()
+		require('lspkind').init({
+			-- DEPRECATED (use mode instead): enables text annotations
+			--
+			-- default: true
+			-- with_text = true,
+
+			-- defines how annotations are shown
+			-- default: symbol
+			-- options: 'text', 'text_symbol', 'symbol_text', 'symbol'
+			mode = 'symbol_text',
+
+			-- default symbol map
+			-- can be either 'default' (requires nerd-fonts font) or
+			-- 'codicons' for codicon preset (requires vscode-codicons font)
+			--
+			-- default: 'default'
+			preset = 'codicons',
+
+			-- override preset symbols
+			--
+			-- default: {}
+			symbol_map = {
+				Class = "",              -- nf-mdi-language_php (Nerd Font icon)
+				Method = "ƒ",             -- nf-custom-function (Nerd Font icon)
+				Function = "λ",           -- nf-fa_lambda (Nerd Font icon)
+				Constructor = "",        -- nf-mdi-code_braces (Nerd Font icon)
+				Variable = "",           -- nf-dev-variable (Nerd Font icon)
+				Module = "",             -- nf-fae-modx (Nerd Font icon)
+				Namespace = "",          -- nf-mdi-xml (Nerd Font icon)
+				Package = "",            -- nf-oct-package (Nerd Font icon)
+				Interface = "",          -- nf-fa_ethernet (Nerd Font icon)
+				Property = "",           -- nf-custom-property (Nerd Font icon)
+				Unit = "",               -- nf-fa_cube (Nerd Font icon)
+				Value = "",              -- nf-fa_money (Nerd Font icon)
+				Enum = "",               -- nf-mdi-crown (Nerd Font icon)
+				Keyword = "",            -- nf-mdi-language_javascript (Nerd Font icon)
+				Snippet = "﬌",            -- nf-oct-gist (Nerd Font icon)
+				Color = "",              -- nf-mdi-palette (Nerd Font icon)
+				File = "",               -- nf-fa_file_code_o (Nerd Font icon)
+				Reference = "",          -- nf-fa_bookmark_o (Nerd Font icon)
+				Folder = "",             -- nf-mdi-folder_outline (Nerd Font icon)
+				EnumMember = "",         -- nf-fa_list (Nerd Font icon)
+				Constant = "",           -- nf-mdi-numeric (Nerd Font icon)
+				Struct = "",             -- nf-fa_object_group (Nerd Font icon)
+				Event = "",              -- nf-fa_bolt (Nerd Font icon)
+				Operator = "",           -- nf-fa_calculator (Nerd Font icon)
+				TypeParameter = "",      -- nf-mdi_format_letter_case_upper (Nerd Font icon)
+				Field = "",              -- nf-oct-field (Nerd Font icon)
+				String = "𝓢",             -- nf-fa_font (Nerd Font icon)
+				Number = "#",             -- nf-custom-number (Nerd Font icon)
+				Boolean = "⊨",            -- nf-custom-boolean (Nerd Font icon)
+				Array = "",              -- nf-fa_th (Nerd Font icon)
+				Object = "",             -- nf-mdi-database (Nerd Font icon)
+				Key = "🔑",                -- nf-oct-key (Nerd Font icon)
+				Null = "NULL",            -- text representation
+			},
+		})
 	end
 
 	function config.nvim_cmp()
@@ -284,39 +340,6 @@ local config = {}
 		  -- If you have lspkind-nvim installed, it will be the default icon set.
 		  -- This can be a filetype map (see :help aerial-filetype-map)
 			icons = {
-				Class = "",              -- nf-mdi-language_php (Nerd Font icon)
-				Method = "ƒ",             -- nf-custom-function (Nerd Font icon)
-				Function = "λ",           -- nf-fa_lambda (Nerd Font icon)
-				Constructor = "",        -- nf-mdi-code_braces (Nerd Font icon)
-				Variable = "",           -- nf-dev-variable (Nerd Font icon)
-				Module = "",             -- nf-fae-modx (Nerd Font icon)
-				Namespace = "",          -- nf-mdi-xml (Nerd Font icon)
-				Package = "",            -- nf-oct-package (Nerd Font icon)
-				Interface = "",          -- nf-fa_ethernet (Nerd Font icon)
-				Property = "",           -- nf-custom-property (Nerd Font icon)
-				Unit = "",               -- nf-fa_cube (Nerd Font icon)
-				Value = "",              -- nf-fa_money (Nerd Font icon)
-				Enum = "",               -- nf-mdi-crown (Nerd Font icon)
-				Keyword = "",            -- nf-mdi-language_javascript (Nerd Font icon)
-				Snippet = "﬌",            -- nf-oct-gist (Nerd Font icon)
-				Color = "",              -- nf-mdi-palette (Nerd Font icon)
-				File = "",               -- nf-fa_file_code_o (Nerd Font icon)
-				Reference = "",          -- nf-fa_bookmark_o (Nerd Font icon)
-				Folder = "",             -- nf-mdi-folder_outline (Nerd Font icon)
-				EnumMember = "",         -- nf-fa_list (Nerd Font icon)
-				Constant = "",           -- nf-mdi-numeric (Nerd Font icon)
-				Struct = "",             -- nf-fa_object_group (Nerd Font icon)
-				Event = "",              -- nf-fa_bolt (Nerd Font icon)
-				Operator = "",           -- nf-fa_calculator (Nerd Font icon)
-				TypeParameter = "",      -- nf-mdi_format_letter_case_upper (Nerd Font icon)
-				Field = "",              -- nf-oct-field (Nerd Font icon)
-				String = "𝓢",             -- nf-fa_font (Nerd Font icon)
-				Number = "#",             -- nf-custom-number (Nerd Font icon)
-				Boolean = "⊨",            -- nf-custom-boolean (Nerd Font icon)
-				Array = "",              -- nf-fa_th (Nerd Font icon)
-				Object = "",             -- nf-mdi-database (Nerd Font icon)
-				Key = "🔑",                -- nf-oct-key (Nerd Font icon)
-				Null = "NULL",            -- text representation
 			},
 		  -- Control which windows and buffers aerial should ignore.
 		  -- Aerial will not open when these are focused, and existing aerial windows will not be updated
