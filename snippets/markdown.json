@@ -1,0 +1,25 @@
+{
+  "Insert image link in markdown file": {
+    "prefix": "image",
+    "body": [
+		"<img src = \"$1\" width = \"$2\" height = \"$3\">  "
+    ],
+    "description": "Insert image link in markdown file"
+  },
+
+  "Insert bold format in markdown file": {
+    "prefix": "bold",
+    "body": [
+		"**$1**"
+    ],
+    "description": "Insert bold format in markdown file"
+  },
+
+  "Insert italic format in markdown file": {
+    "prefix": "italic",
+    "body": [
+		"*$1*"
+    ],
+    "description": "Insert italic format in markdown file"
+  }
+}
